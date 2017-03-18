@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+/*服务下面的线*/
+*{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+}
+.banner{
+	width:100%;
+	height:474px;
+	margin:auto;
+	background-image:url(../img/banner-yuesao.png);
+}
+
+.fuwu{
+	width:100%;
+	height:40px;
+	margin-top:40px;
+}
+.fuwuC{
+	width:1000px;
+	height:40px;
+	margin:auto;
+}
+.fuwuCL{
+	width:100px;
+	height:39px;
+	padding-top:0px;
+	padding-left:0px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	float:left;	
+}
+.fuwuCR{
+	width:73px;
+	height:13px;
+	float:right;
+	padding-top:15px;
+}
+	
+.fuwuCB{
+	width:1000px;
+	height:1px;
+	margin:auto;
+}
+/*服务图*/
+.fuwutu{
+	width:100%;
+	height:390px;
+	margin-top:30px;
+}
+.fuwutuC{
+	width:1000px;
+	height:159px;
+	margin:auto;
+	padding-top:25px;
+}
+.tu{
+	width:230px;
+	height:159px;
+	padding-left:20px;
+	float:left;
+}
+.fuwuziC{
+	width:1000px;
+	height:150px;
+	margin:auto;
+}
+.zi{
+	width:230px;
+	height:150px;
+	margin-left:20px;
+	float:left;
+	margin-top:5px;
+}
+.zi h{
+	color:rgb(241,111,135);
+	font-size:20px;
+}
+.fuwulianjie{
+	width:1000px;
+	height:50px;
+	margin:auto;
+}
+
+.lianjie{
+	width:210px;
+	height:50px;
+	margin-left:40px;
+	float:left;
+	margin-top:15px;
+}
+/*在线选人*/
+.xuanren{
+	width:100%;
+	height:40px;
+	margin-top:40px;
+}
+.xuanrenC{
+	width:1000px;
+	height:40px;
+	margin:auto;
+}
+.xuanrenCL{
+	width:100px;
+	height:30px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	float:left;	
+}
+.xuanrenCR{
+	width:129px;
+	height:17px;
+	float:right;
+	padding-top:15px;
+}
+	
+.xuanrenCB{
+	width:1000px;
+	height:1px;
+	margin:auto;
+}
+/*金牌*/
+.jinpai{
+	width:100%;
+	height:678px;
+	margin-top:25px;
+	background-color:rgb(254,247,237);
+}
+.jinpaiC{
+	width:1000px;
+	height:640px;
+	margin:auto;
+}
+/*服务流程*/
+.liucheng{
+	width:100%;
+	height:40px;
+	margin-top:40px;
+}
+.liuchengC{
+	width:1000px;
+	height:39px;
+	margin:auto;
+	font-size:18px;
+	font-family:"微软雅黑";	
+}
+.liuchengCB{
+	width:1000px;
+	height:1px;
+	margin:auto;
+}
+.quanfangwei{
+	width:100%;
+	height:660px;
+	margin-top:25px;
+	background-color:rgb(254,247,237);
+}
+.quanfangweiC{
+	width:1000px;
+	height:654px;
+	margin:auto;
+}
+/*资质荣誉以及下面的线*/
+.zizhi{
+	width:100%;
+	height:40px;
+	margin-top:40px;
+}
+.zizhiC{
+	width:1000px;
+	height:39px;
+	margin:auto;
+	font-size:18px;
+	font-family:"微软雅黑";	
+}
+.zizhiCB{
+	width:1000px;
+	height:1px;
+	margin:auto;
+}
+/*资质荣誉*/
+.rongyu{
+	width:100%;
+	height:180px;
+	margin-top:40px;
+}
+.rongyuC{
+	width:1000px;
+	height:180px;
+	margin:auto;
+}
+.zhengshu1{
+	width:25px;
+	height:53px;
+	float:left;
+	margin-top:60px;
+}
+.zhengshu2{
+	width:225px;
+	height:180px;
+	float:left;
+	margin-left:10px;
+}
+.zhengshu3{
+	width:25px;
+	height:53px;
+	margin:auto;
+	float:left;
+	margin-left:10px;
+    margin-top:60px;
+}
+/*口碑*/
+.kobei{
+	width:100%;
+	height:40px;
+	margin-top:40px;
+}
+.kobeiC{
+	width:1000px;
+	height:40px;
+	margin:auto;
+}
+.kobeiCL{
+	width:508px;
+	height:39px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	float:left;	
+}
+.kobeiCR{
+	width:460px;
+	height:39px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	float:right;
+
+}
+	
+.kobeiCBL{
+	width:1000px;
+	height:1px;
+	margin:auto;
+}
+.jianzheng{
+	width:100%;
+	height:367px;
+	margin-top:25px;
+	background-color:rgb(254,247,237);
+}
+.jianzhengC{
+	width:1000px;
+	height:365px;
+	margin:auto;
+}

@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"微软雅黑";
+}
+p{
+	color:#666;
+}
+a{
+	text-decoration:none;
+	font-size:16px;
+	color:#666;
+	
+}
+ a:hover {
+	text-decoration: none;
+	color:rgb(235,109,160);
+}
+h3{
+	color:rgb(102,102,102);
+}
+h4{
+	color:rgb(102,102,102);
+}
+.banner{
+	width:100%;
+	height:611px;
+	background-image:url(../img/shouye-banner.png);
+}
+.bannerC{
+	width:1000px;
+	height:497px;
+	margin-left:140px;
+	margin-top:57px;
+	float:left;
+}
+.bannerCL{
+	width:660px;
+	height:497px;
+	float:left;
+}
+.bannerCLT{
+	width:660px;
+	height:415px;
+}
+.bannerCLB{
+	width:660px;
+	height:82px;
+	background-color:rgb(255,255,255);
+	}
+.bannerCLB_zi{
+	width:300px;
+	height:24px;
+	margin-left:35px;
+	margin-top:30px;
+	float:left;
+	font-size:18px;
+}
+	
+.bannerCR{
+	width:340px;
+	height:497px;
+	float:left;
+}
+
+.bannerCR1{
+	width:340px;
+	height:154px;
+	float:left;
+}
+.bannerCR2{
+	width:340px;
+	height:154px;
+	margin-top:17px;
+	float:left;
+}
+.bannerCR11{
+	width:153px;
+	height:154px;
+	margin-left:17px;
+	float:left;
+}
+
+
+
+
+/*营养资讯、胎教快报以及下面的线*/
+.zixun{
+	width:100%;
+	height:25px;
+	margin-top:55px;
+}
+.zixunC{
+	width:1000px;
+	height:25px;
+	margin:auto;
+}
+.zixunCL{
+	width:590px;
+	height:25px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	float:left;	
+}
+.zixunCLR{
+	width:44px;
+	height:12px;
+	float:right;
+	margin-top:6px;
+}
+.zixunCR{
+	width:350px;
+	height:25px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	margin-left:50px;
+	float:left;
+
+}
+.zixunCBL{
+	width:1000px;
+	height:2px;
+	margin:auto;
+}
+ /*营养资讯以及胎教快报的内*/
+ .zongti{
+	 width:100%;
+	 height:320px;
+	 margin-top:20px;
+ }
+.zongtiC{
+	width:1000px;
+	height:320px;
+	margin:auto;
+}
+ .zongtiCL{
+	 width:590px;
+	 height:310px;
+	 float:left;	
+ }
+ .zongtiCL1{
+	 width:590px;
+	 height:120px;
+ }
+  .zongtiCL1L{
+	 width:400px;
+	 height:120px;
+	 float:left;
+ }
+  .zongtiCL2{
+	 width:590px;
+	 height:20px;
+	 margin-top:30px;
+ }
+  .zongtiCL2L{
+	 width:10px;
+	 height:8px;
+	 margin-top:8px;
+	 float:left;
+ }
+  .zongtiCL2R{
+	 width:575px;
+	 height:25px;
+	 float:left;
+	 margin:auto;
+ }
+ .zongtiCL2B{
+	 width:588px;
+	 height:1px;
+	 margin-top:5px;
+ }
+  .zongtiCL1R{
+	 width:160px;
+	 height:120px;
+	 margin-left:10px;
+	 float:left;
+ }
+  .zongtiCR{
+	 width:350px;
+	 height:310px;
+	 margin-left:50px;
+	 float:left;
+ }
+ .zongtiCR1R{
+	 width:340px;
+	 height:30px;
+	 float:left;
+	 margin-top:20px;
+ }
+ .zongtiCL2B1{
+	 width:290px;
+	 height:1px;
+	 margin-top:5px;
+ }
+ .YueHuan{
+	width:100%;
+	height:310px;	
+}
+.YueWen{
+	width:1000px;
+	margin:auto;
+	height:75px;
+}
+.YWleft{
+	float:left;
+	margin-top:18px;
+}
+.YUEright{
+	float:right;
+	margin-top:50px;
+}
+.YWxian{
+	margin:auto;
+	width:1000px;
+}
+.biao{
+	width:1000px;
+	margin:auto;
+}
+.biao p{
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#666;
+}
+.zhoangj4{
+	width:100%;
+	height:380px;
+	margin-top:5px;
+}
+
+.table2{
+	width:1000px;
+	margin:auto;
+}
+
+.table2 p{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#666;
+	margin-top:0px;
+}
+.table2 img{
+	margin-top:0px;
+}
+.Zleft{
+	float:left;
+}
+.Zright{
+	float:right;
+	width:45px;
+	margin-top:60px;
+}

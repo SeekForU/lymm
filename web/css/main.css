@@ -1,0 +1,96 @@
+/**
+*鍦≒osition灞炴�鍊间负absolute鐨勫悓鏃讹紝
+*濡傛灉鏈変竴绾х埗瀵硅薄锛堟棤璁烘槸鐖跺璞¤繕鏄鐖跺璞★紝鎴栬�鍐嶉珮鐨勮緢鍒嗭紝涓�牱锛�
+*鐨凱osition灞炴�鍊间负Relative鏃讹紝鍒欎笂杩扮殑鐩稿娴忚鍣ㄧ獥鍙ｅ畾浣嶅皢浼氬彉鎴愮浉瀵圭埗瀵硅薄瀹氫綅锛�
+*杩欏绮剧‘瀹氫綅鏄緢鏈夊府鍔╃殑銆�
+*/
+*{
+    margin: 0;
+    padding: 0;
+	list-style-type:none;
+}
+/*nav瀵艰埅鐩掑瓙*/
+div.nav{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    background:rgb(235,109,160);
+	margin:0px auto 0 auto;
+}
+/*nav-main*/
+ul.nav-main{
+    margin-left:140px;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+ul.nav-main span{
+    display: inline-block;
+    margin-left: 140px;
+    width: 7px;
+    height: 7px;
+    background: url('../img/down-icon.png') no-repeat;
+}
+/*鍥炬爣鍚戜笂鏃嬭浆*/
+.hover-up{
+    transition-duration: .5s;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+/*鍥炬爣鍚戜笅鏃嬭浆*/
+.hover-down{
+    transition-duration: .5s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+/*瀵艰埅鏉¤缃*/
+ul.nav-main>li{
+    width: 120px;
+    height: 100%;
+    display: block;
+    float: left;
+    background: rgb(235,109,160);
+    color: #fff;
+    margin-right: 1px;
+    cursor: pointer;
+	margin-left:40px;
+}
+ul.nav-main>li:hover{
+    background:rgb(235,109,160); 
+}
+/*闅愯棌鐩掑瓙璁剧疆*/
+div.hidden-box{
+    width: 118px;
+    border: 1px solid rgb(235,109,160);
+    border-top: 0;
+    position: absolute;
+    display:none;
+	background:#fff;
+    top: 50px;
+	margin-left:140px;
+}
+.hidden-box>ul{
+    list-style-type: none;
+    color: rgb(235,109,160);
+    cursor: pointer;
+}
+.hidden-box li:hover{
+    background: rgb(235,109,160);
+    color: #fff;
+}
+/*闅愯棌鐩掑瓙浣嶇疆璁剧疆*/
+.hidden-loc-index{
+    left:200px;
+}
+.hidden-loc-us{
+    left: 360px;
+}
+.hidden-loc-info{
+    left: 520px;
+}
+.box04{
+	left:690px;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+.banner{
+	width:1280px;
+	margin:auto;
+	}
+.banner_p{
+	background-image:url(../img/chanhouhuifu_banner.png);
+	width:1280px;
+	height:474px;
+	margin:auto;}
+.content_pi{
+	background-image:url(../img/chanhohuifu_zhengtitu.png);
+	width:1280px;
+	height:2450px;
+	margin:auto;
+	}

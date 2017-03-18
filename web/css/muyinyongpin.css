@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.daohang{
+	width:1280px;
+}
+*{
+	margin:0; padding:0px;
+	font-family:"微软雅黑"; }
+.banner{
+	width:1280px;
+	height:544px;
+	margin:auto;
+	background-image:url(../img/chanpin_banner.png);}
+.content{
+
+	width:1280px;
+	margin:auto;
+	height:372px;
+	background-color:rgb(235,195,211);}
+
+.content_pic{
+	width:1071px;
+	height:297px;
+	margin:auto;
+	padding-top:43px;
+
+	}
+.content_pic_l{
+	width:36px;
+	padding-top:110px;
+	float:left;
+	
+	}
+.content_pic_c{
+	height:297px;
+	margin-left:57px;	
+	}
+.content_pic_c ul{
+	margin-left:18px;
+	display:inline-block;
+	list-style:none;
+	}	
+.content_pic_c ul li{
+	display:inline-block;
+	list-style:none;
+	margin-left:2px;
+	}
+.content_pic_r{
+	width:36px;
+	height:71px;
+	float:right;
+	margin-top:-160px;}
+.contain{
+	width:1280px;
+	margin:auto;
+	padding:0px;}

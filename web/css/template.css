@@ -1,0 +1,227 @@
+*{ margin:0; padding:0; font-family:"微软雅黑";}
+.denlu{
+	width:1000px;
+	height:20px;	
+	font-size:14px;
+	margin:auto;
+	overflow:hidden;
+	/*font-family:"微软雅黑";*/
+}
+.denlu a{
+	text-decoration:none;
+	color:rgb(102,102,102);
+}
+.denlu ul{
+	display:inline-block;
+	list-style-type:none;     
+	font-size:14px;
+	float:right;
+	color:rgb(102,102,102);
+	}
+.denlu ul li{
+	display:inline-block;
+	margin-left:10px;
+	float:left;
+	}
+	
+.biaoti{
+	width:1000px;
+	margin:auto;
+	height:100px;
+}
+.logo{
+	width:245px;
+	height:95px;
+	margin-left:0px;
+	margin-top:3px;
+	float:left;
+}
+.tel{
+	width:333px;
+	height:25px;
+	margin-right:0px;
+	margin-top:51px;
+	float:right;
+
+}
+.daohang{
+	/*font-family:"微软雅黑";*/
+	margin:auto;
+	width:1280px;
+	height:50px;
+	background-color:rgb(235,109,160);
+	background-repeat:repeat-x;
+	overflow:hidden;
+}
+.daohangL{
+	width:100px;
+	height:50px;
+	float:left;
+	margin-left:140px;
+	/*font-family:"微软雅黑";*/
+	
+}
+.daohangR{
+	/*font-family:"微软雅黑";*/
+	width:1280px;
+	padding-right:1280px;
+	height:50px;
+}
+.daohangR ul li a{
+	text-decoration:none;
+	font-size:16px;
+	color:rgb(255,255,255);
+	
+}
+.daohangR ul li a:hover {
+	text-decoration: none;
+}
+.daohangR  ul{
+	 width:1040px;
+	 height:50px;
+	 list-style:none;
+	 margin:0px;	
+}
+.daohangR  ul li{
+	width:100px;
+	height:50px;
+	display:inline-block;
+	margin-left:45px;
+	font-size:16px;
+	text-align:center;
+	margin-top:15px;
+	/*font-family:"微软雅黑";*/
+	font-weight:bolder;
+}
+
+.Rdaohang{
+	width:62px;
+	height:439px;
+	margin-right:0px;
+	float:right;
+	margin-top:60px;
+	
+}
+.Rdaohang1{
+	width:62px;
+	height:63px;
+	margin-top:15px;
+	
+}
+.jiange{
+	width:1280px;
+	height:40px;
+}
+
+
+
+#footer{
+	width:100%;
+	height:290px;
+	margin-top:40px;
+}
+.footer_top{
+	width:100%;
+	height:200px;
+	/*font-family:"微软雅黑";*/
+	background-color:rgb(235,109,160);
+}
+.wenzi2 .shugang{
+	color:#FFF;}
+.light{
+	width:24%;
+	float:left;
+}
+.erweim{
+	padding-top:40px;
+	margin-left:190px;
+	width:120px;
+	float:left;
+}
+.right{
+	width:76%;
+	float:right;
+}
+
+.Rlight{
+	width:60%;
+	float:left;
+	height:150px;
+	margin-left:50px;
+}
+.wenzi{
+	margin-top:50px;
+	font-size:14px;
+}
+.wenzi1{
+	margin-top:20px;
+}
+.wenzi1 p{
+	font-size:14px;
+	color:rgb(255,255,255);
+}
+
+.wenzi2  a{
+	text-decoration:none;
+	font-size:14px;
+	color:rgb(255,255,255);
+}
+.Rright{
+	width:34%;
+	height:30px;
+	float:right;
+	margin-top:20px;
+}
+.fenx{
+	width:290px;
+	height:20px;
+	margin-right:14%;
+}
+.fenx ul{
+	list-style:none;
+}
+.fenx ul li{
+	display:inline-block;
+	margin-left:5px;
+}
+.fenx ul li a:hover {
+	text-decoration: none;
+}
+.fenx ul li a{
+	text-decoration:none;
+	font-size:16px;
+	color:rgb(255,255,255);
+	/*font-family:"微软雅黑";*/
+}
+.footer_bottom{
+	width:100%;
+	height:90px;
+	background-color:rgb(221,81,137);
+}
+.lianjie1{
+	width:1000px;
+	height:45px;
+	margin:auto;
+	padding-top:25px;
+}
+/*<!--连接-->*/
+.lianjie1 ul{
+	list-style:none;
+}
+.lianjie1 ul li{
+	display:inline-block;
+	margin-left:0px;
+	float:left;
+
+}
+.lianjie1 ul li a:hover {
+	text-decoration: none;
+}
+.lianjie1 ul li a{
+	vertical-align:middle;
+	line-height:20px;
+	text-decoration:none;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#CCC;
+}
