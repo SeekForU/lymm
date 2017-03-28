@@ -126,7 +126,8 @@
       </div>
       <div class="bannerCR">
         <div class="bannerCR1"><div class="bannerCR11"><img src="img/zhuanchejiesong.png"></div>
-          <div class="bannerCR11"><a href="html/hosptial.html"><img src="img/yuyueguahao.png"></a></div></div>
+          <%--<div class="bannerCR11"><a href="html/hosptial.html"><img src="img/yuyueguahao.png"></a></div></div>--%>
+          <div class="bannerCR11"><a href="doctors.jsp"><img src="img/yuyueguahao.png"></a></div></div>
         <div class="bannerCR2"><div class="bannerCR11"><a href="html/Mental.html"><img src="img/chanqianduanlian.png"></a></div><div class="bannerCR11"><a href="html/chanhouhuifu.html"><img src="img/chanhouhuifu.png"></a></div></div>
         <div class="bannerCR2"><div class="bannerCR11"><a href="html/yuesao.html"><img src="img/jinpaiyuesao.png"></a></div><div class="bannerCR11"><a href="html/muyingyongpin.html"><img src="img/yingerzaojiao.png"></a></div></div>
 

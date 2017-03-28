@@ -15,6 +15,13 @@ public class Orders {
 	public Orders() {
 	}
 
+	public Orders(String trueName, String name, Date date, String type) {
+		this.trueName = trueName;
+		this.name = name;
+		this.date = date;
+		this.type = type;
+	}
+
 	public Integer getId() {
 		return id;
 	}

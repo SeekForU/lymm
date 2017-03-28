@@ -13,5 +13,10 @@ public class AdminDAOImpl extends BaseDAO<Admin> implements AdminDAO {
 		return query(sql, name);
 	}
 
+	@Override
+	public Admin equalsAdmin(String name, String passwd) {
+		String sql = "SELECT name,password FROM admin WHERE name = ? & passwd = ?";
+		return query(sql, name, passwd);
+	}
 
 }

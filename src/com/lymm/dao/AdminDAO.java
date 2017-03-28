@@ -14,5 +14,5 @@ public interface AdminDAO {
 	 */
 	Admin getAdmin(String name);
 
-
+	Admin equalsAdmin(String name, String passwd);
 }
