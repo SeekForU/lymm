@@ -1,18 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>医院</title>
-<link rel="stylesheet" href="../css/hospital1.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>医生</title>
+<link rel="stylesheet" href="doctors.css" type="text/css">
 <link rel="stylesheet" href="../css/template1.css" type="text/css">
 <link rel="stylesheet" href="../css/main.css"/>
 <script type="text/javascript" src="../js/jquery.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script language="javascript" src="../js/checkform.js"></script>
+
+    <style type="text/css">
+        .href1 {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
+
+
 
 <body>
 <!-- 登录/注册栏-->
 <div class="denlu">
-<p><a href="#">登录</a>|<a href="#">注册</a>&nbsp&nbsp&nbsp 联系我们 &nbsp&nbsp&nbsp&nbsp 加入收藏</p>
+
+    <p>
+            <a href="#">您好:${sessionScope.trueName}</a>|<a href="#">注册</a>&nbsp;&nbsp;&nbsp; 联系我们 &nbsp;&nbsp;&nbsp;&nbsp; 加入收藏
+
+    <a href="../ordersServlet?method=orderList" target="_parent">个人挂号信息</a>
+    </p>
 </div>
 <!--标题栏-->
 <div class="biaoti">
@@ -27,7 +43,8 @@
 <div class="nav">
 	<!--导航条-->
 	<ul class="nav-main">
-        <li>首页</li>
+        <li><a style=" text-decoration: none;
+            color: white;" href="../shouye.jsp">首页</a></li>
 		<li id="li-1">准妈妈 </li>
 		<li id="li-2">妈咪佳人<span></span></li>
 		<li id="li-3">孕妈用品<span></span></li>
@@ -70,13 +87,58 @@
 <script type="text/javascript" src="../js/main.js"></script>
 <!--banner图-->
 <div class="banner">
+
+    <div class="order">
+
+
+        <center>
+
+            <table width="70%" border="0" cellpadding="0" cellspacing="0" class="main">
+                <tr valign="top">
+                    <td><form action="#" method="post" name="form1" onSubmit="return checkuser()">
+                        <table width="100%" border="0" cellpadding="2" cellspacing="1" class="inputTable">
+                            <tr>
+                                <td align="center"><h2>您的挂号清单</h2></td>
+                            </tr>
+
+                            <tr>
+                                <td class="inputHeader">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="1" class="inputbox">
+                                        <tr>
+                                            <td width="25%" align="center" class="inputHeader">医生姓名</td>
+                                            <td width="23%" align="center" class="inputContent">类型</td>
+                                            <td width="25%" align="center" class="inputContent">时间</td>
+                                            <td width="10%" align="center" class="inputContent">操作</td>
+                                        </tr>
+                                        <c:forEach items="${ordersList}" var="list">
+                                            <tr>
+                                                <td width="25%" align="center" class="inputHeader">${list.name}</td>
+                                                <td width="23%" align="center" class="inputContent">${list.type}</td>
+                                                <td width="25%" align="center" class="inputContent">${list.date}</td>
+                                                <td width="10%" align="center" class="inputContent"><a href="ordersServlet?method=cancel&id=${list.id}">取消</a></td>
+                                            </tr>
+                                        </c:forEach>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+    </div>
+
    <div class="Rdaohang">
        <div class="Rdaohang1"><a  rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2439145710&amp;site=qq&amp;menu=yes"><img src="../img/4.png"></a></div>
        <div class="Rdaohang1"><a href="#"><img src="../img/2.png"></a></div>
        <div class="Rdaohang1"><a href="#"><img src="../img/1.png"></a></div>
        <div class="Rdaohang1"><a href="#"><img src="../img/3.png"></a></div>
     </div>
-    
+
     <script id="longlian_service_tmpl" type="text/x-jquery-tmpl">
 	<!--{{if service != null}}-->
 		<!--{{each(i, svc) service}}-->
@@ -87,7 +149,9 @@
 </script>
  </div>
  
- 
+ <%
+
+ %>
 <!--中间-->
   <!--第一层-->
 <div class="zhongj1">

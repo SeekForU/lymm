@@ -1,12 +1,16 @@
 
+.order{
+	height: 470px;
+}
+
+
 .banner{
-	height:474px;
-	background-color: #2A469E;
-	background-image:url(../img/HBackgroud_19.png);
-	margin:auto;
-	margin-top:0px;
+	height:470px;
+	/*background-image:url(../img/HBackgroud_19.png);*/
+	/*margin:auto;*/
+	/*margin-top:0px;*/
 	float:left;
-	}
+}
 	.content{
 	width:1028px;
 	height:300px;

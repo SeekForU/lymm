@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 <%--<iframe src="top2.jsp" frameborder="0" marginheight="0" marginwidth="0" width="70%" height="150" scrolling="no"></iframe>--%>
-
+<center>
 
 <table width="70%" border="0" cellpadding="0" cellspacing="0" class="main">
 <tr valign="top">
@@ -35,13 +35,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <form action="ordersServlet?method=order" method="post" name="form1" onSubmit="return checkTime()">
   <table width="100%" border="0" cellpadding="2" cellspacing="1" class="inputTable">
     <tr>
-    
+
       <td align="center">预约信息确认</td>
     </tr>
-    
+
     <tr>
       <td class="inputHeader">
-      
+
 	   <table width="100%" border="0" cellpadding="0" cellspacing="1" class="inputbox">
           <tr>
             <td width="25%" align="center" class="inputHeader">预约人：</td>
@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           </tr>
          <tr>
             <td width="25%" align="center" class="inputHeader"></td>
-            <td width="23%" align="center" class="inputContent"></td>      
+            <td width="23%" align="center" class="inputContent"></td>
           </tr>
             <tr>
             <td width="25%" align="center" class="inputHeader">预约医生：</td>
@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           </tr>
            <tr>
             <td width="25%" align="center" class="inputHeader"></td>
-            <td width="23%" align="center" class="inputContent"></td>      
+            <td width="23%" align="center" class="inputContent"></td>
           </tr>
             <tr>
             <td width="25%" align="center" class="inputHeader">类型：</td>
@@ -67,7 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           </tr>
            <tr>
             <td width="25%" align="center" class="inputHeader"></td>
-            <td width="23%" align="center" class="inputContent"></td>      
+            <td width="23%" align="center" class="inputContent"></td>
           </tr>
             <tr>
             <td width="25%" align="center" class="inputHeader">时间：</td>
@@ -80,7 +80,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           </tr>
            <tr>
             <td width="25%" align="center" class="inputHeader"></td>
-            <td width="23%" align="center" class="inputContent"></td>      
+            <td width="23%" align="center" class="inputContent"></td>
           </tr>
             <tr>
             <td width="25%" align="center" class="inputHeader"></td>
@@ -90,14 +90,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </td>
           </tr>
         </table>
-        
+
 	  </td>
     </tr>
-   
+
   </table>
-  </form>  
+  </form>
 </td>
 </tr>
 </table>
+</center>
 </body>
 </html>

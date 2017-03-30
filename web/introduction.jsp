@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 String path = request.getContextPath();
@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>½éÉÜ</title>
+<title>ä»‹ç»</title>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script language="javascript" src="js/checkform.js"></script>
@@ -33,7 +33,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <td class="inputHeader">
 	   <table width="100%" border="0" cellpadding="0" cellspacing="1" class="inputbox">
 	   <tr>
-            <th width="25%" align="center" class="inputHeader">Ò½ÉúÃû³Æ£º</th>
+            <th width="25%" align="center" class="inputHeader">åŒ»ç”Ÿåç§°ï¼š</th>
             <td width="23%" align="left" class="inputContent">${doctorList.name}</td>
           </tr>
 	   <tr>
@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <td width="23%" align="center" class="inputContent"></td>                
           </tr>
           <tr>
-            <th width="25%" align="center" class="inputHeader">ÀàĞÍ£º</th>
+            <th width="25%" align="center" class="inputHeader">ç±»å‹ï¼š</th>
             <td width="23%" align="left" class="inputContent">${doctorList.type}</td>
           </tr>
             <tr>
@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <td width="23%" align="left" class="inputContent"></td>                
           </tr>
              <tr>
-            <th width="25%" align="center" class="inputHeader">ÁªÏµ·½Ê½£º</th>
+            <th width="25%" align="center" class="inputHeader">è”ç³»æ–¹å¼ï¼š</th>
             <td width="23%" align="left" class="inputContent">${doctorList.phone}</td>
           </tr>
           <tr>
@@ -57,7 +57,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <td width="23%" align="center" class="inputContent"></td>                
           </tr>
              <tr>
-            <th width="25%" align="center" class="inputHeader">¼ò½é£º</th>
+            <th width="25%" align="center" class="inputHeader">ç®€ä»‹ï¼š</th>
             <td width="23%" align="left" class="inputContent">${doctorList.introduction }</td>
           </tr>
 

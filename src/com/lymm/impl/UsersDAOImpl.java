@@ -10,9 +10,9 @@ import java.util.List;
  */
 public class UsersDAOImpl extends BaseDAO<Users> implements UsersDAO {
 	@Override
-	public Users getUsers(String name,String password) {
-		String sql = "SELECT * FROM users WHERE name = ? & password = ?";
-		return query(sql, name,password);
+	public Users getUsers(String trueName,String number) {
+		String sql = "SELECT * FROM users WHERE trueName = ? and number = ?";
+		return query(sql, trueName,number);
 	}
 
 	@Override

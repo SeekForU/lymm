@@ -15,7 +15,7 @@
 
         <div class="login_padding" id="login_model">
 
-            <form action="../loginServlet?method=login" method="post">
+            <form action="../usersServlet?method=login" method="post">
                 <h2>USERNAME</h2>
 
                 <label>

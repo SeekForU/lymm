@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
     <title>乐孕妈妈</title>
@@ -36,7 +37,9 @@
     <ul>
       <li>
         <c:if test="${user==null}">
-          <a href="html/login.html">Login</a>
+          <a href="html/login.html">
+            您好:${sessionScope.trueName}
+          </a>
           <%--   <a href="${pageContext.request.contextPath}/servlet/LoginUIServlet">登录</a>
             <a href="${pageContext.request.contextPath}/servlet/RegisterUIServlet">注册</a> --%>
         </c:if>
@@ -127,7 +130,10 @@
       <div class="bannerCR">
         <div class="bannerCR1"><div class="bannerCR11"><img src="img/zhuanchejiesong.png"></div>
           <%--<div class="bannerCR11"><a href="html/hosptial.html"><img src="img/yuyueguahao.png"></a></div></div>--%>
-          <div class="bannerCR11"><a href="doctors.jsp"><img src="img/yuyueguahao.png"></a></div></div>
+          <%--原始版本--%>
+          <%--<div class="bannerCR11"><a href="doctors.jsp"><img src="img/yuyueguahao.png"></a></div></div>--%>
+          <%--新版本--%>
+          <div class="bannerCR11"><a href="pages/doctor.jsp"><img src="img/yuyueguahao.png"></a></div></div>
         <div class="bannerCR2"><div class="bannerCR11"><a href="html/Mental.html"><img src="img/chanqianduanlian.png"></a></div><div class="bannerCR11"><a href="html/chanhouhuifu.html"><img src="img/chanhouhuifu.png"></a></div></div>
         <div class="bannerCR2"><div class="bannerCR11"><a href="html/yuesao.html"><img src="img/jinpaiyuesao.png"></a></div><div class="bannerCR11"><a href="html/muyingyongpin.html"><img src="img/yingerzaojiao.png"></a></div></div>
 

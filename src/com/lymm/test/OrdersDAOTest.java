@@ -15,13 +15,14 @@ public class OrdersDAOTest {
 	@Test
 	public void TestGetOrders() {
 
-		Orders orders = ordersDAO.getOrders("zhang");
-		System.out.println(orders);
 	}
 
 	@Test
 	public void TestAddOrders() {
-		Orders orders = new Orders("zhang", "li", null, "Hello");
+		//Orders orders = new Orders("zhang", "li", null, "Hello");
+		//Orders orders = new Orders("zhang", "li", null, "吗");
+		Orders orders = new Orders("按计划", "里", null, "吗");
+		System.out.println(orders);
 		ordersDAO.AddOrders(orders);
 
 	}

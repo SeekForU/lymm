@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -17,7 +17,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div align="center">
   <table width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="right"><h3>����:<%=session.getAttribute("trueName") %>|<a href="UserAction?method=returnIndex" target="_parent">������ҳ</a>|<a href="OrderAction?method=orderList" target="_parent">���˹Һ���Ϣ</a>|<a href="UserAction?method=exit" target="_parent">��ȫ�˳�</a></h3></td>
+      <%--<td align="right"><h3>您好:<%=session.getAttribute("trueName") %>|<a href="UserAction?method=returnIndex" target="_parent">返回首页</a>|<a href="OrderAction?method=orderList" target="_parent">个人挂号信息</a>|<a href="UserAction?method=exit" target="_parent">安全退出</a></h3></td>--%>
+      <td align="right"><h3>您好:Rose |<a href="shouye.jsp">返回首页</a>|<a href="ordersServlet?method=orderList" target="_parent">个人挂号信息</a>|<a href="UserAction?method=exit" target="_parent">安全退出</a></h3></td>
     </tr>
   </table>
      <table width="100%" border="0" cellspacing="0" cellpadding="0">

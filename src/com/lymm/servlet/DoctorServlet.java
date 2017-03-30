@@ -62,6 +62,8 @@ public class DoctorServlet extends HttpServlet {
 		//request.setAttribute("doctorList", doctorList);
 		request.getRequestDispatcher("introduction.jsp").forward(request, response);
 	}
+
+
 	/**
 	 * 展示医生List
 	 * @param request
@@ -73,7 +75,11 @@ public class DoctorServlet extends HttpServlet {
 			throws ServletException, IOException {
 		List<Doctor> doctorList = doctorDAO.getAllDoctors();
 		request.setAttribute("doctorList", doctorList);
-		request.getRequestDispatcher("doctors.jsp").forward(request, response);
+		//版本1
+		//request.getRequestDispatcher("doctors.jsp").forward(request, response);
+
+		//版本2
+		request.getRequestDispatcher("pages/doctor.jsp").forward(request, response);
 	}
 	/**
 	 * 预约
@@ -84,6 +90,12 @@ public class DoctorServlet extends HttpServlet {
 	 */
 	protected void order(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
+
+
+		request.setCharacterEncoding("UTF-8");
+
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
 		String idStr = request.getParameter("id");
 		int id = -1;
 		try {
@@ -96,7 +108,10 @@ public class DoctorServlet extends HttpServlet {
 		System.out.println(doctor);
 		if (doctor != null) {
 			request.setAttribute("list", doctor);
-			request.getRequestDispatcher("order.jsp").forward(request, response);
+			//版本1
+			//request.getRequestDispatcher("order.jsp").forward(request, response);
+			//版本2
+			request.getRequestDispatcher("pages/order.jsp").forward(request, response);
 		}else {
 			response.sendRedirect("error.jsp");
 		}

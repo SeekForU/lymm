@@ -46,9 +46,9 @@ public class LoginServlet extends HttpServlet {
 		//if (user.getUserName().equals(nameStr) && user.getUserPassword().equals(passwdStr)) {
 		if (user.getUserName() == nameStr && user.getUserPassword() == passwdStr) {
 			response.sendRedirect(request.getContextPath() + "/error.jsp");
-
 			return;
 		}
+
 		request.setAttribute("user", user);
 		//request.getRequestDispatcher("html/login.html").forward(request, response);
 		request.getRequestDispatcher("shouye.jsp").forward(request,response);

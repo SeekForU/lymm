@@ -10,9 +10,9 @@ import java.util.List;
  */
 public class OrdersDAOImpl extends BaseDAO<Orders> implements OrdersDAO {
 	@Override
-	public Orders getOrders(String name) {
-		String sql = "SELECT id,trueName,name,time,type FROM orders WHERE name = ?";
-		return query(sql, name);
+	public List<Orders> getOrders(String trueName) {
+		String sql = "SELECT id,trueName,name,time,type FROM orders WHERE trueName = ?";
+		return queryForList(sql, trueName);
 	}
 
 	@Override

@@ -12,10 +12,11 @@ public interface OrdersDAO {
 
 	/**
 	 * 获取记录
-	 * @param name
+	 * @param trueName
 	 * @return
 	 */
-	Orders getOrders(String name);
+	List<Orders> getOrders(String trueName);
+
 
 	/**
 	 *增加一条记录
