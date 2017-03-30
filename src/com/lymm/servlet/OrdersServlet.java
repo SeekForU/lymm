@@ -56,8 +56,10 @@ public class OrdersServlet extends HttpServlet {
 
 
 
-		HttpSession httpSession = request.getSession();
-		String trueName = (String) httpSession.getAttribute("trueName");
+		//HttpSession httpSession = request.getSession();
+		//String trueName = (String) httpSession.getAttribute("trueName");
+		//System.out.println(trueName);
+		String trueName = "zhang";
 		//TODO
 		List<Orders> ordersList = ordersDAO.getOrders(trueName);
 		request.setAttribute("ordersList", ordersList);
@@ -87,7 +89,7 @@ public class OrdersServlet extends HttpServlet {
 		ordersDAO.deleteOrder(id);
 		//HttpSession session=request.getSession();
 		//	String trueName=(String)session.getAttribute("trueName");
-		List<Orders> ordersList = ordersDAO.getOrders("Hello");
+		List<Orders> ordersList = ordersDAO.getOrders("zhang");
 		request.setAttribute("ordersList", ordersList);
 		//版本1
 		//request.getRequestDispatcher("orderList.jsp").forward(request,response);
@@ -106,19 +108,24 @@ public class OrdersServlet extends HttpServlet {
 	protected void order(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.setCharacterEncoding("UTF-8");
+		//request.setCharacterEncoding("UTF-8");
+		//
+		//response.setCharacterEncoding("UTF-8");
+		//response.setContentType("text/html; charset=UTF-8");
 
-		response.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		HttpSession httpSession = request.getSession();
+		String trueName = (String) httpSession.getAttribute("trueName");
+		System.out.println(trueName);
 
-		String trueName = request.getParameter("trueName");
-		//String trueName = "Hello";
+		//String trueName = request.getParameter("trueName");
+		//System.out.println( "真实姓名"+ trueName);
+		//String trueName = "zhang";
 		String name = request.getParameter("name");
 		String type = request.getParameter("type");
 		String time = request.getParameter("time");
 		//System.out.println(time);
 
-		System.out.println(type);
+		//System.out.println(type);
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 		PrintWriter out = response.getWriter();
 		try {

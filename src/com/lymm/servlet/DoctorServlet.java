@@ -92,10 +92,10 @@ public class DoctorServlet extends HttpServlet {
 			throws IOException, ServletException {
 
 
-		request.setCharacterEncoding("UTF-8");
-
-		response.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		//request.setCharacterEncoding("UTF-8");
+		//
+		//response.setCharacterEncoding("UTF-8");
+		//response.setContentType("text/html; charset=UTF-8");
 		String idStr = request.getParameter("id");
 		int id = -1;
 		try {

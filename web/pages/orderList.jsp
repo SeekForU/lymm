@@ -25,7 +25,7 @@
 <div class="denlu">
 
     <p>
-            <a href="#">您好:${sessionScope.trueName}</a>|<a href="#">注册</a>&nbsp;&nbsp;&nbsp; 联系我们 &nbsp;&nbsp;&nbsp;&nbsp; 加入收藏
+    <a href="#">您好:${sessionScope.trueName}</a>|<a href="#">注册</a>&nbsp;&nbsp;&nbsp; 联系我们 &nbsp;&nbsp;&nbsp;&nbsp; 加入收藏
 
     <a href="../ordersServlet?method=orderList" target="_parent">个人挂号信息</a>
     </p>
