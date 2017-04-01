@@ -1,0 +1,22 @@
+.login{ border:1px solid #93a826; width:388px; height:377px;background:#fff; overflow:hidden;zoom:1; position:relative;}
+.login01{ padding:10px 30px;}
+.logtit{ border-bottom:1px solid #d8e8f8; overflow:hidden;zoom:1; line-height:36px; padding-bottom:3px;}
+.logtit strong{ font-size:16px; font-weight:normal;}
+.login01 a{ color:#0053aa;}
+.dlzt{ padding:15px 0 0 60px;}
+.dlzt label{ margin-right:20px; margin-left:5px; float:left;}
+.dlzt input{ float:left; margin-top:2px;*margin-top:-2px;}
+.w120{ width:120px;}
+.dlm{ float:left; width:60px; font-size:16px; line-height:30px;}
+.dltxt{ float:left; background:url(../images/dltxt.gif) no-repeat; width:187px; height:28px; padding:1px 1px 1px 5px; line-height:28px; border:0;}
+.wjmm{ float:left; margin-left:15px; line-height:30px;}
+.zd input{ float:left; margin:2px 5px 0 60px;*margin:0px 1px 0 60px;}
+.zd label{ float:left;}
+.dlbtn{ background:url(../images/dlbtn.gif) no-repeat; width:191px; height:34px; border:0; cursor:pointer; margin:20px 0 0 60px;}
+.qtdl{ background:#fcf4d7; margin-top:15px; padding:10px 27px 15px;overflow:hidden;zoom:1;}
+.qtdl a{ overflow:hidden;zoom:1; float:left; color:#333; margin-top:10px;}
+.qtdl a img,.qtdl a span{ float:left; line-height:37px; margin-right:5px;}
+.qtdl a img{ margin-left:30px;}
+.dltcc{ position:fixed;top:50%;left:50%; width:417px; height:380px; margin-top:-190px; margin-left:-208px; display:none;}
+.gban{ display:block; position:absolute;top:10px; right:10px; background:url(../images/gban.gif) no-repeat; width:15px; height:15px; cursor:pointer;}
+

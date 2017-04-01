@@ -1,0 +1,1125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="choose/hm.js"></script>
+    <script defer="defer"
+            src="choose/a.js"></script>
+    <title>
+        网上选月嫂
+    </title>
+    <meta name="keywords" content="快速预约月嫂,网上选月嫂,优月之家月嫂公司">
+    <meta name="description"
+          content="#">
+    <link rel="stylesheet" type="text/css"
+          href="choose/common.css">
+    <link rel="stylesheet" type="text/css"
+          href="choose/index.css">
+    <link rel="stylesheet" type="text/css"
+          href="choose/login.css">
+    <script type="text/javascript"
+            src="choose/jquery-1.js"></script>
+
+    <script src="choose/WdatePicker.js" type="text/javascript"></script>
+    <link href="choose/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="choose/jquery_002.js"></script>
+    <script type="text/javascript" src="choose/Validform_v5.js"></script>
+    <script src="choose/JS.js" type="text/javascript"></script>
+    <script type="text/javascript" src="choose/jquery.js"></script>
+    <script>
+        $(function () {
+            var vform = $(".vform").Validform({
+                //btnSubmit:"#submit1",
+                //btnReset:".btn_reset",
+                ignoreHidden: true,
+                showAllError: true,
+                tiptype: 3,
+                usePlugin: {
+                    passwordstrength: {
+                        minLen: 6,
+                        maxLen: 20
+                    }
+                }
+            });
+        });
+
+        function GetMoney() {
+            var ddl = document.getElementById("DropDownList1");
+            var index = ddl.selectedIndex;
+            var text = ddl.options[index].text;
+            var day = document.getElementById("TextBox3").value;
+            var sMoney = "";
+            var sum = "";
+            //         Lable5
+            //         Lable2
+            //         Lable3
+            //         Lable4
+
+
+            if (!$("#CheckBox1").attr('checked')) {
+                var dropvalue = "";
+                var text = $("#Label2").html();
+                {
+
+                }
+                if (text == "初级") {
+                    dropvalue = 7;
+                }
+                if (text == "中级") {
+                    dropvalue = 8;
+                }
+                if (text == "高级") {
+                    dropvalue = 9;
+                }
+                if (text == "特级") {
+                    dropvalue = 10;
+                }
+                if (text == "金牌") {
+                    dropvalue = 11;
+                }
+                if (text == "钻石") {
+                    dropvalue = 12;
+                }
+                if (text == "皇冠") {
+                    dropvalue = 13;
+                }
+                document.getElementById('DropDownList1').value = dropvalue;
+                //alert("指定预约的级别不能修改，只能和当前选择的月嫂级别一致！");
+            }
+
+            if (text == "初级") {
+                sMoney = 5800;
+            }
+            if (text == "中级") {
+                sMoney = 6800;
+            }
+            if (text == "高级") {
+                sMoney = 7800;
+            }
+            if (text == "特级") {
+                sMoney = 8800;
+            }
+            if (text == "金牌") {
+                sMoney = 9800;
+            }
+            if (text == "钻石") {
+                sMoney = 11800;
+            }
+            if (text == "皇冠") {
+                sMoney = 13800;
+            }
+            var sum
+            if (document.getElementById("CheckBox2").checked == true) {
+                sum = sMoney * day / 26 * 1.3;
+            }
+            else {
+                sum = sMoney * day / 26;
+            }
+            sum = Math.floor(sum);
+            document.getElementById("Label17").innerHTML = sum + "元";
+            document.getElementById("MoneyAll").innerHTML = "<strong>服务订单：</strong><span>" + text + "服务&nbsp;&nbsp; 服务天数" + day + "天</span><strong class=\"ml20\">总金额：</strong><span class=\"jhs\">&yen;<span class=\"b f15\">" + sum + "元</span></span><b class=\"ml80\">定金支付</b><span class=\"jhs ml5\">&yen;<span class=\"f18 hs b ml5\">1000</span></span>"
+        }
+
+        $(document).ready(function () {
+            GetMoney();
+            $("#NoHardy").hide();
+            if ($("#TextBox10").val() == "-1") {
+                $("#CheckBox1").attr("checked", "checked");
+                $("#HardyTable").hide();
+                $("#NoHardy").show();
+
+            }
+            else {
+                //$("#CheckBox1").attr("checked","");
+                $("#HardyTable").show();
+                $("#NoHardy").hide();
+
+            }
+            $("#CheckBox1").click(function () {
+                if ($("#CheckBox1").attr("checked") == "checked") {
+                    $("#HardyTable").hide();
+                    $("#NoHardy").show();
+
+                }
+                else {
+                    //            var ddl=document.getElementById("DropDownList1");
+                    //            var index = ddl.selectedIndex;
+
+                    //   $("#DropDownList1 option[text='" + $("#Label2").html() + "']").attr("selected", true);  
+                    var dropvalue = "";
+                    var text = $("#Label2").html();
+                    {
+
+                    }
+                    if (text == "初级") {
+                        dropvalue = 7;
+                    }
+                    if (text == "中级") {
+                        dropvalue = 8;
+                    }
+                    if (text == "高级") {
+                        dropvalue = 9;
+                    }
+                    if (text == "特级") {
+                        dropvalue = 10;
+                    }
+                    if (text == "金牌") {
+                        dropvalue = 11;
+                    }
+                    if (text == "钻石") {
+                        dropvalue = 12;
+                    }
+                    if (text == "皇冠") {
+                        dropvalue = 13;
+                    }
+
+                    document.getElementById('DropDownList1').value = dropvalue;
+
+                    if ($("#TextBox10").val() == "-1") {
+                        $("#CheckBox1").attr("checked", true);
+                        return;
+                    }
+                    $("#HardyTable").show();
+                    $("#NoHardy").hide();
+                }
+            });
+        });
+
+        function SendMSG(sTel, Cord) {
+            $.ajax({
+                type: "POST",   //访问WebService使用Post方式请求
+                contentType: "application/json", //WebService 会返回Json类型
+                url: "ws_Tel.asmx/SendMsgLogin2", //调用WebService的地址和方法名称组合---WsURL/方法名
+                data: "{sTel:'" + sTel + "',Cord:'" + Cord + "'}",         //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到      
+                dataType: 'json',
+                success: function (result) {     //回调函数，result，返回值
+                    return result.d;
+                }
+            });
+        }
+        //function CheckNo()
+        //{
+        //    alert('1');
+        //    alert($("#CheckBox1").attr("checked"));
+        //}
+        // 
+
+    </script>
+    <style type="text/css">
+        .ddldisplay {
+            float: left;
+            height: 27px;
+            position: relative;
+            cursor: pointer;
+            top: 0px;
+            left: 0px;
+            font-size: 12px;
+            margin-right: 10px;
+            margin-top: 10px;
+            z-index: 9999;
+        }
+
+        .ddldisplay span {
+            padding-left: 5px;
+            height: 27px;
+            line-height: 27px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-top: 10px;
+            top: 100px;
+            left: 0px;
+        }
+
+        .ddldisplay div {
+            display: none;
+            position: absolute;
+            top: 27px;
+            left: 0px;
+            border: 1px solid #bfbfbf;
+            border-top: none;
+            width: 280px;
+            height: auto;
+            overflow: hidden;
+            background: #ffffff;
+        }
+
+        .ddldisplay div a {
+            display: block;
+            padding-left: 5px;
+            height: 20px;
+            line-height: 20px;
+            color: #666;
+            text-decoration: none;
+            background: #ffffff;
+            float: left;
+            width: 60px;
+        }
+
+        .ddldisplay div a:hover {
+            color: Blue;
+            text-decoration: underline;
+        }
+
+        .ddlShouhuo {
+            width: 101px;
+            background: url(ddlAdderss.gif) no-repeat;
+        }
+
+        #ddlQu div {
+            width: 140px;
+            border-top: 1px solid #d2d2d2;
+        }
+
+        #ddlShi div {
+            width: 140px;
+        }
+
+        ul, li, table, h1, h2, h3, h4, h5, h6, img {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: #5a5a5a;
+        }
+
+        .sspan1 {
+            width: 80px;
+        }
+
+        .scon label {
+            width: 71px;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" src="choose/a_002.js"></script>
+</head>
+<body>
+<form name="form1" method="post" action="order.aspx?id=15" id="form1" class="vform">
+    <div>
+        <input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+        <input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+        <input name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwULLTE2ODIzMzA2MDcPZBYCAgMPZBYiAgUPDxYCHghJbWFnZVVybAVFaHR0cDovL3NlcnAuNTI1OC5jbi9hZG1pbi91cGxvYWQvSGFyZHlQaWMvc21hbGxfMjAxNTA1MTMxNjM1MDMxMTEuanBnZGQCBw8PFgIeBFRleHQFBuadjioqKmRkAgkPDxYCHwEFBueah+WGoGRkAgsPDxYCHwEFBuiJr+WlvWRkAg0PDxYCHwEFBTEwMDc1ZGQCDw8PFgIfAQUG5pyI5auCZGQCEQ8PFgIfAQUKMTY2Y20vNjVrZ2RkAhMPDxYCHwEFCeW5v+S4nOecgWRkAhUPDxYCHwEFrQLkvJjjgIA8aW1nIHNyYz0iaW1hZ2VzL3h4MDEucG5nIiBhbHQ9IiIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE4IiAvPjxpbWcgc3JjPSJpbWFnZXMveHgwMS5wbmciIGFsdD0iIiB3aWR0aD0iMTkiIGhlaWdodD0iMTgiIC8+PGltZyBzcmM9ImltYWdlcy94eDAxLnBuZyIgYWx0PSIiIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOCIgLz48aW1nIHNyYz0iaW1hZ2VzL3h4MDEucG5nIiBhbHQ9IiIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE4IiAvPjxpbWcgc3JjPSJpbWFnZXMveHgwMS5wbmciIGFsdD0iIiB3aWR0aD0iMTkiIGhlaWdodD0iMTgiIC8+ZGQCFg8PFgIfAWVkZAIYDw8WAh8BBQblpKfkuJNkZAIaDw8WAh8BBQIzOGRkAhwPDxYCHwEFBuaxieaXj2RkAh4PDxYCHwEFEuaZrumAmuivneOAgeeypOivrWRkAiAPDxYCHwEFAjc4ZGQCIg8PFgIfAQUP5bey5ama5LiA5bCP5a2pZGQCJA8PFgIfAQUSNjUwMTAyKioqKioqKio2NTQ2ZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgUFCUNoZWNrQm94MQUJQ2hlY2tCb3gyBQxSYWRpb0J1dHRvbjEFDFJhZGlvQnV0dG9uMQUMUmFkaW9CdXR0b24yrVi/gyRkmC1IpSXHZuWz1dVsYKU="
+               type="hidden">
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+        //]]>
+    </script>
+
+
+    <div>
+
+        <input name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWHAKXxLuaBAKp1OzhAwKC5Ne7CQLs0bLrBgL/49e7CQKUi6WLBgKFi6WLBgKKi6WLBgKSi+WIBgKSi+mIBgKSi+2IBgKSi9GIBgLM9PumDwLs0fbZDALs0Yq1BQLs0e58AuzRgtgJAq/U7OEDArDU7OEDAqHU7OEDAuzRxsYPAuzR2qEIAuzR/rYIAtSSk9cFAuzRkpIBAuiP1/wCAuiPo9gLAoznisYG3tK+FROeJP9y7mSVUoDBbGTFxpw="
+               type="hidden">
+    </div>
+    <div>
+        <div class="head">
+            <div class="headin">
+                <input name="TextBox10" value="15" id="TextBox10" style="display: none;" type="text">
+                <a href="http://www.5258.cn/" class="logo">
+                    <img src="choose/logo_log.jpg" alt="" width="245" height="95"></a>
+
+                <!--width:245px;-->
+                <!--height:95px;-->
+            </div>
+        </div>
+        <div class="main pm15 pt28">
+            <div class="w939">
+                <ul class="ddqrtit">
+                    <li class="cur">选择月嫂</li>
+                    <li class="cur">订单填写</li>
+                    <li>定金支付</li>
+                    <li>成功提交</li>
+                </ul>
+                <div class="bor1 mt20">
+                    <div class="xzys">
+                        <strong>月嫂选择</strong><span><input id="CheckBox1" name="CheckBox1" type="checkbox">快速预约<a
+                            href="#">【重新选择月嫂】</a></span>
+                    </div>
+                    <table id="NoHardy" class="xztab01" style="display: none;" cellspacing="0" cellpadding="0"
+                           border="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                尊敬的客户您好：
+                                非指定预约模式是优月家庭服务中非常重要的预约模式。您不必浪费大量时间进行选人面试，公司将为您指派一名专属的VIP客服专员，全程跟进您的每一个具体
+                                的需求和需求变更，VIP客服专员为您把关，在约定的服务时间投送与您需求最为匹配的服务人员上门服务。
+                                <br>
+                                感谢您选择非指定预约模式服务，您的VIP客服专员将尽快和您联系！
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table id="HardyTable" class="xztab01" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td rowspan="5" class="pl18" width="125">
+                                <img id="Image1" src="choose/small_20150513163503111.jpg"
+                                     style="height:144px;width:105px;border-width:0px;">
+                            </td>
+                            <td width="94" bgcolor="#eeedeb">
+                                姓名：
+                            </td>
+                            <td>
+                                <span id="Label1">李***</span>
+                            </td>
+                            <td width="94" bgcolor="#eeedeb">
+                                级别：
+                            </td>
+                            <td>
+                                <span id="Label2">皇冠</span>
+                            </td>
+                            <td width="94" bgcolor="#eeedeb">
+                                健康状况：
+                            </td>
+                            <td>
+                                <span id="Label3">良好</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#eeedeb">
+                                工号：
+                            </td>
+                            <td>
+                                <span id="Label4">10075</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                服务种类：
+                            </td>
+                            <td>
+                                <span id="Label5">月嫂</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                身高/体重：
+                            </td>
+                            <td>
+                                <span id="Label6">166cm/65kg</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#eeedeb">
+                                籍贯：
+                            </td>
+                            <td>
+                                <span id="Label7">广东省</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                信用等级：
+                            </td>
+                            <td>
+                                <span id="Label8">优　<img src="choose/xx01.png" alt="" width="19" height="18"><img
+                                        src="choose/xx01.png" alt="" width="19" height="18"><img src="choose/xx01.png"
+                                                                                                 alt="" width="19"
+                                                                                                 height="18"><img
+                                        src="choose/xx01.png" alt="" width="19" height="18"><img src="choose/xx01.png"
+                                                                                                 alt="" width="19"
+                                                                                                 height="18"></span><span
+                                    id="Label9"></span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                学历：
+                            </td>
+                            <td>
+                                <span id="Label10">大专</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#eeedeb">
+                                年龄：
+                            </td>
+                            <td>
+                                <span id="Label11">38</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                民族：
+                            </td>
+                            <td>
+                                <span id="Label12">汉族</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                语言：
+                            </td>
+                            <td>
+                                <span id="Label13">普通话、粤语</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#eeedeb">
+                                照顾月子数：
+                            </td>
+                            <td>
+                                <span id="Label14">78</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                婚姻状况：
+                            </td>
+                            <td>
+                                <span id="Label15">已婚一小孩</span>
+                            </td>
+                            <td bgcolor="#eeedeb">
+                                身份证：
+                            </td>
+                            <td>
+                                <span id="Label16">650102********6546</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bor1 mt20">
+                    <div class="xzys">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td width="87%">
+                                    <strong>填写服务内容</strong>
+                                </td>
+                                <td align="right">
+                                    <a target="_blank"
+                                       href="http://5258.cn/News.aspx?sType=News&amp;id=468">【客户常见问题汇总】</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fwcon">
+                        <div class="clearfix mt20">
+                            <span>*</span><label>预产期：</label><input name="TextBox1" value="2017-04-01" id="TextBox1"
+                                                                    class="ycqtxt" onclick="WdatePicker();" datatype="*"
+                                                                    nullmsg="请选择日期"
+                                                                    type="text"><label>是否双胞胎</label><span class="sf"
+                                                                                                          onchange="GetMoney();"><input
+                                id="CheckBox2" name="CheckBox2" type="checkbox"></span><label>服务级别：</label><select
+                                name="DropDownList1" id="DropDownList1" onchange="GetMoney();">
+                            <option value="7">初级</option>
+                            <option value="8">中级</option>
+                            <option value="9">高级</option>
+                            <option value="10">特级</option>
+                            <option value="11">金牌</option>
+                            <option value="12">钻石</option>
+                            <option value="13" selected="selected">皇冠</option>
+
+                        </select>
+                            <em>【<a id="LinkButton1" class="lsd"
+                                    href="javascript:__doPostBack('LinkButton1','')">查看服务标准</a>】</em>
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>*</span><label>服务开始时间：</label><input name="TextBox2" value="2017-04-01" id="TextBox2"
+                                                                       class="ycqtxt" onclick="WdatePicker();"
+                                                                       datatype="*" nullmsg="请选择日期"
+                                                                       onchang="GetMoney();" type="text"><label
+                                class="ml20">服务天数：</label><input name="TextBox3" value="26" id="TextBox3" class="ycqtxt"
+                                                                 onkeyup="GetMoney();" datatype="*" nullmsg="请输入服务天数"
+                                                                 type="text">
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>&nbsp;</span><label><strong>服务价格：</strong></label><b class="red"><b class="f15"><label
+                                id="Label17">13800元</label></b></b>
+                        </div>
+                        <div class="clearfix mt15">
+                            <span>&nbsp;</span><label>其他备注：</label><textarea name="TextBox4" rows="2" cols="20"
+                                                                             id="TextBox4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="bor1 mt20">
+                    <div class="xzys">
+                        <strong>填写客户基本信息</strong>
+                    </div>
+                    <div class="fwcon">
+                        <div class="clearfix mt20">
+                            <span>*</span><label>真实姓名：</label><input name="TextBox5" id="TextBox5" class="ycqtxt"
+                                                                     datatype="*" nullmsg="请输入真实姓名" type="text">
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>*</span><label>所在地区：</label>
+                            <div class="ddlShouhuo ddldisplay" id="ddlSheng">
+                                <span style="float: none" id="txtSheng">(省/直辖市)</span>
+                                <div><a href="javascript:;" id="北京市">北京市</a><a href="javascript:;" id="天津市">天津市</a><a
+                                        href="javascript:;" id="河北省">河北省</a><a href="javascript:;" id="山西省">山西省</a><a
+                                        href="javascript:;" id="内蒙古区">内蒙古区</a><a href="javascript:;" id="辽宁省">辽宁省</a><a
+                                        href="javascript:;" id="吉林省">吉林省</a><a href="javascript:;" id="黑龙江省">黑龙江省</a><a
+                                        href="javascript:;" id="上海市">上海市</a><a href="javascript:;" id="江苏省">江苏省</a><a
+                                        href="javascript:;" id="浙江省">浙江省</a><a href="javascript:;" id="安徽省">安徽省</a><a
+                                        href="javascript:;" id="福建省">福建省</a><a href="javascript:;" id="江西省">江西省</a><a
+                                        href="javascript:;" id="山东省">山东省</a><a href="javascript:;" id="河南省">河南省</a><a
+                                        href="javascript:;" id="湖北省">湖北省</a><a href="javascript:;" id="湖南省">湖南省</a><a
+                                        href="javascript:;" id="广东省">广东省</a><a href="javascript:;" id="广西区">广西区</a><a
+                                        href="javascript:;" id="海南省">海南省</a><a href="javascript:;" id="重庆市">重庆市</a><a
+                                        href="javascript:;" id="四川省">四川省</a><a href="javascript:;" id="贵州省">贵州省</a><a
+                                        href="javascript:;" id="云南省">云南省</a><a href="javascript:;" id="西藏区">西藏区</a><a
+                                        href="javascript:;" id="陕西省">陕西省</a><a href="javascript:;" id="甘肃省">甘肃省</a><a
+                                        href="javascript:;" id="青海省">青海省</a><a href="javascript:;" id="宁夏区">宁夏区</a><a
+                                        href="javascript:;" id="新疆区">新疆区</a><a href="javascript:;" id="台湾省">台湾省</a><a
+                                        href="javascript:;" id="香港特区">香港特区</a><a href="javascript:;" id="澳门特区">澳门特区</a>
+                                </div>
+                            </div>
+                            <div class="ddlShouhuo ddldisplay" id="ddlShi">
+                                <span style="float: none" id="txtShi">(地区/市)</span>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="ddlShouhuo ddldisplay" id="ddlQu">
+                                <span style="float: none" id="txtqu">(区/县)</span>
+                                <div>
+                                </div>
+                            </div>
+                            <input name="TextBox16" id="TextBox16" datatype="*" nullmsg="请选择省" style="display: none"
+                                   type="text">
+                            <input name="TextBox17" id="TextBox17" datatype="*" nullmsg="请选择市" style="display: none"
+                                   type="text">
+                            <input name="TextBox18" id="TextBox18" datatype="*" nullmsg="请选择区" style="display: none"
+                                   type="text">
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>*</span><label>详细地址：</label><input name="TextBox6" id="TextBox6"
+                                                                     class="ycqtxt ycqtxt2" datatype="*"
+                                                                     nullmsg="请输入详细地址" type="text">
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>*</span><label>手机号码：</label><input name="TextBox7" id="TextBox7" class="ycqtxt"
+                                                                     datatype="*" nullmsg="请输入手机号码" type="text"><input
+                                style="height: 30px;" id="btn" value="获取验证码" type="button">
+                            <div class="clearfix mt20">
+                                <span>*</span><label>
+                                验证码：</label><input name="TextBox8" id="TextBox8" class="ycqtxt" type="text">
+                            </div>
+                            <script>
+                                var wait = 60;
+                                function time(o) {
+                                    if (wait == 0) {
+                                        o.value = "获取验证码";
+                                        wait = 60;
+                                    }
+                                    else {
+                                        o.value = "重新发送(" + wait + ")";
+                                        wait--;
+                                        setTimeout(function () {
+                                            time(o)
+                                        }, 1000)
+                                    }
+                                }
+
+                                //        document.getElementById("btn").onclick=function(){   
+                                //            if(document.getElementById("TextBox7").value == "")
+                                //            {
+                                //                alert('请输入手机号！');return;
+                                //            }  
+                                //            if(document.getElementById("btn").value != "获取验证码")
+                                //            {
+                                //                return;
+                                //            }                                
+                                //            time(this);
+                                //            SendMSG(document.getElementById("TextBox7").value);
+                                //        }
+
+
+                                document.getElementById("btn").onclick = function () {
+                                    var Count = $.cookie("IsYan");   //获取是否存在不允许发送验证码的Cookie
+                                    if (Count != null) {  //存在就是提示频繁
+                                        alert("您获取验证码过于频繁,稍等15分钟后再试.");
+                                    } else {
+                                        var X = new BengXiaKaLaKa();
+                                        if (document.getElementById("TextBox7").value == "") {
+                                            alert('请输入手机号！');
+                                            return;
+                                        }
+
+                                        var pattern = /^0?(13|15|18|17)[0-9]{9}$/;
+                                        if (!pattern.test(document.getElementById("TextBox7").value)) {
+                                            alert("请填写正确的手机号...");
+                                            return;
+                                        }
+
+                                        if (document.getElementById("btn").value != "获取验证码") {
+                                            return;
+                                        }
+                                        time(this);
+                                        if (SendMSG(document.getElementById("TextBox7").value, X.Cord()) == "请求过期,请重新发送。") {
+                                            alert("请求过期,请重新发送。");
+                                        }
+
+                                        //获取以及判断验证码发送次数   
+                                        //如果存储次数的Cookie存在
+                                        if ($.cookie("Count") != null) {
+                                            var Count = $.cookie("Count"); //存在就取出存起来备用
+                                            if (Count >= 7) {   //判断取出的次数是否大于7
+                                                var date = new Date();
+                                                date.setTime(date.getTime() + 900 * 1000); // 获取过期时间  900秒即15分钟
+                                                $.cookie('Count', "1");   //到了7次只有把次数改为1，重新计次
+                                                $.cookie('IsYan', 'true', {expires: date});   //设置不可继续发送验证码Cookie
+                                                return;
+                                            }
+                                            Count = (Number(Count) + 1);  //没有到7次就把当前次数+1
+                                            $.cookie("Count", Count);  //写入计次Cookie
+                                        } else {
+                                            $.cookie("Count", "1");    //不存在计次Cookie就创建
+                                        }
+
+                                    }
+                                }
+
+
+                                function setCookie(name, value) {
+                                    var Days = 30;
+                                    var exp = new Date();
+                                    exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+                                    document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+
+
+                                }
+
+                                function getCookie(name) {
+                                    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+                                    if (arr = document.cookie.match(reg))
+
+                                        return (arr[2]);
+                                    else
+                                        return null;
+                                }
+                            </script>
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                        <div class="clearfix mt20">
+                            <span>&nbsp;</span><label>证件类型：</label><select name="DropDownList2" id="DropDownList2">
+                            <option value="身份证" selected="selected">身份证</option>
+
+                        </select>
+                            <label class="ml10">
+                                证件号码：</label><input name="TextBox9" id="TextBox9" class="ycqtxt ycqtxt2" datatype="*"
+                                                    nullmsg="请输入身份证号" type="text">
+                            <b style="color: Red;" class="Validform_checktip"></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="bor1 mt20">
+                    <div class="xzys">
+                        <strong>支付方式</strong>
+                    </div>
+                    <div class="fwcon fwcon2">
+                        <div class="clearfix mt15">
+                            <span class="yhzz"><input id="RadioButton1" name="zz01" value="RadioButton1"
+                                                      type="radio"></span><label class="f16">
+                            银行转账</label><i>客户经理会与您联系，请保持手机畅通</i>
+                        </div>
+                        <br>
+                        <div class="clearfix mt15">
+                            <span class="yhzz"><input id="RadioButton2" name="zz01" value="RadioButton2"
+                                                      checked="checked" type="radio"></span><label class="f16">
+                            支付宝付款</label><i>通过支付宝支付定金， 支付成功后，我们工作人员会24小时内与您沟通订单的详细事宜。</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="fwdd mt20">
+                    <div class="fl" id="MoneyAll"><strong>服务订单：</strong><span>皇冠服务&nbsp;&nbsp; 服务天数26天</span><strong
+                            class="ml20">总金额：</strong><span class="jhs">¥<span class="b f15">13800元</span></span><b
+                            class="ml80">定金支付</b><span class="jhs ml5">¥<span class="f18 hs b ml5">1000</span></span>
+                    </div>
+                    <input name="Button1" value="同意以下条款，提交订单" id="Button1" class="tjdd" style="cursor: hand"
+                           type="submit">
+                </div>
+                <a href="http://www.5258.cn/news.aspx?sType=news&amp;id=293" target="_blank" class="f16 jhs fr mt10">【服务条款】</a>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="footer_box">
+            <div class="footer_990">
+                <p>
+                    <a href="http://www.5258.cn/News.aspx?sType=News&amp;id=286">隐私保护</a>| <a
+                        href="http://www.5258.cn/News.aspx?sType=News&amp;id=271">
+                    关于我们</a>| <a href="http://www.5258.cn/News.aspx?sType=News&amp;id=287">人才招聘</a>| <a
+                        href="http://www.5258.cn/News.aspx?sType=News&amp;id=275">
+                    联系我们</a>| <a href="http://www.5258.cn/News.aspx?sType=News&amp;id=288">招商合作</a>| <a
+                        href="javascript:void(0)">
+                    新浪微博</a>| <a href="javascript:void(0)">腾讯微博</a>
+                </p>
+                <span>Copyright ©2016-2020 5258.cn All Rights Reserved #####<br>
+                    粤ICP备####号 <a href="#/">#</a>
+                </span>
+            </div>
+        </div>
+        <div style="height: 10px;">
+        </div>
+    </div>
+    <!--提示框-->
+    <div class="tsbox" style="display: none;">
+        <p class="tstit">
+            提示框</p>
+        <div class="bwt">
+            <p>
+                您的订单已经提交成功，请选择下一步操作</p>
+            <a href="" class="zfb">支付宝付款</a><a href="" class="zfb zfb2">取消</a>
+            <div class="clr">
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">        var cnzz_protocol = (("https:"
+== document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cspan 
+id = 'cnzz_stat_icon_1258023363' % 3E % 3
+C / span % 3E % 3
+Cscript
+src = '" +
+cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1258023363%26show%3Dpic'
+type = 'text/javascript' % 3E % 3
+C / script % 3E
+"));</script>
+<span id="cnzz_stat_icon_1258023363"><a href="http://www.cnzz.com/stat/website.php?web_id=1258023363" target="_blank"
+                                        title="站长统计"><img src="choose/pic.gif" vspace="0" hspace="0"
+                                                          border="0"></a></span>
+<script src="choose/z_stat.php" type="text/javascript"></script>
+<script src="choose/core.php" charset="utf-8" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    $('.tsbox').hide();
+
+    function hideHardyMsg() {
+        $('#HardyMsg').hide();
+    }
+    function showHardyMsg() {
+        $('#HardyMsg').show();
+    }
+
+
+    function change() {
+        var sheng, shi, qu;
+        sheng = $("#ddlSheng");
+        shi = $("#ddlShi");
+        qu = $("#ddlQu");
+        var v1, v2, v3;
+        v1 = $(sheng).find("span").text()
+        v2 = $(shi).find("span").text()
+        v3 = $(qu).find("span").text();
+        $('#TextBox16').val(v1);
+        $('#TextBox17').val(v2);
+        $('#TextBox18').val(v3);
+    }
+
+
+    $(document).ready(function () {
+
+        cityArea();
+        var sheng, shi, qu;
+        sheng = $("#ddlSheng");
+        shi = $("#ddlShi");
+        qu = $("#ddlQu");
+
+        var Pro, city;
+        if ($('#TextBox16').val() != "") {
+            Pro = $('#TextBox16').val();
+            $(sheng).find("span").text(Pro);
+            test2(Pro);
+            if ($('#TextBox17').val() != "") {
+                city = $('#TextBox17').val();
+                //                 
+                $(shi).find("span").text($('#TextBox17').val());
+                test3(Pro, city);
+            }
+        }
+
+        $('.ddldisplay').hover(
+                function () {
+                    return false;
+                },
+                function () {
+                    change();
+                    $(this).children("div").hide();
+                    $('.ddldisplay').toggle(
+                            function () {
+                                if ($('#TextBox1').attr('disabled') != 'disabled') {
+                                    $(this).children("div").show();
+                                }
+                            },
+                            function () {
+                                change();
+                                $(this).children("div").hide();
+                            }
+                    );
+                }
+        );
+    });
+    function cityArea() {
+        $.ajax({
+            url: "Area.xml", //地址
+            type: "GET",
+            dataType: "xml",
+            error: function (xdata) {
+                alert("fail:");
+            },
+            success: function (xdata) {
+                var sheng, shi, qu;
+                sheng = $("#ddlSheng");
+                shi = $("#ddlShi");
+                qu = $("#ddlQu");
+                if ($(xdata) != null) {
+                    $(sheng).find("div").html("");
+                    for (var i = 0; i < $(xdata).find("address > 
+                         province").length; i++) {
+                    $(sheng).find("div").append("<a
+                    href = 'javascript:;'
+                    id = '" + $(xdata).find("address > province:eq(" + i +
+                    ")"
+                ).
+                    attr("name") + "'>" + $(xdata).find("address > province:eq(" + i +
+                            ")").attr("name") + "</a>"
+                )
+                    ;
+                    ;
+                }
+            }
+            //下面是下拉框
+            $(".ddldisplay").toggle(
+                function () {
+                    if ($('#TextBox1').attr('disabled') !=
+                            'disabled') {
+                        $(this).children("div").show();
+                    }
+                },
+                function () {
+                    $(this).children("div").hide();
+                }
+        );
+        $(sheng).find("a").click(function () {
+            $(sheng).find("span").text($(this).text());
+            var provinceName = $(this).text();
+            //清空市和区的列表，以免重复添加
+            $(shi).find("div").html("");
+            $(qu).find("div").html("");
+            //根据省查找该省的所有下级市，市下所有区
+            for (var i = 0; i < $(xdata).find("address >
+                 province[name = '" + provinceName + "'] > city").length; i++) {
+            $(shi).find("div").append("<a
+            href = 'javascript:;' > " + $(xdata).find("
+            address > province[name = '" +
+            provinceName + "'] > city:eq(" + i + ")"
+            ).
+            attr("name") + "</a>"
+            )
+            ;
+        }
+                for (var i = 0; i < $(xdata).find("address >
+        province[name = '" + $(this).text() + "'] > city[name = '" +
+        $(shi).find("div a:eq(0)").text() + "'] > country"
+    ).
+        length;
+        i++
+    )
+        {
+            var txt = $(xdata).find("address >
+            province[name = '" + $(this).text() + "'] > city[name = '" +
+            $(shi).find("div a:eq(0)").text() + "'] > country:eq(" + i +
+            ")"
+        ).
+            attr("name");
+            $(qu).find("div").append("<a
+            href = 'javascript:;' > " + txt + " < / a > ");
+        }
+        $(qu).find("a").click(function () {
+            $(qu).find("span").text($(this).text());
+            change($(sheng).find("span").text(),
+                    $(shi).find("span").text(), $(qu).find("span").text());
+        });
+
+        //隐藏列表
+        $(this).parents(".ddldisplay").find("div").hide();
+        $(shi).find("span").text($(shi).find("div
+        a:eq(0)
+        ").text());
+        $(qu).find("span").text($(qu).find("div
+        a:eq(0)
+        ").text());
+        $(shi).find("a").click(function () {
+            var provinceName = $(sheng).find("span").text();
+            //省
+            var cityName = $(this).text(); //市
+            $(shi).find("span").text(cityName);
+            var country = $(xdata).find("address >
+            province[name = '" + provinceName + "'] > city[name = '" + cityName + "'] >
+            country
+            ");
+            var len = country.length;
+            $(qu).find("div").html("");
+            for (var i = 0; i < len; i++) {
+                var countryName = $(xdata).find("address >
+                province[name = '" + provinceName + "'] > city[name = '" + cityName + "'] >
+                country
+            :
+                eq(" + i + ")
+                ").attr("
+                name
+                ");
+                $(qu).find("div").append("<a
+                href = 'javascript:;' > " + countryName + " < / a > ");
+            }
+            //隐藏列表
+
+            $(this).parents(".ddldisplay").find("div").hide();
+            $(qu).find("span").text($(qu).find("div
+            a:eq(0)
+            ").text());
+            $(qu).find("a").click(function () {
+                $(qu).find("span").text($(this).text());
+            });
+        });
+    })
+        ;
+    }
+    })
+    ;
+    }
+
+    function test2(pro) {
+        $.ajax({
+            url: "Area.xml", //地址
+            type: "GET",
+            dataType: "xml",
+            error: function (xdata) {
+                alert("fail:");
+            },
+            success: function (xdata) {
+
+                var sheng, shi, qu;
+                sheng = $("#ddlSheng");
+                shi = $("#ddlShi");
+                qu = $("#ddlQu");
+
+                var provinceName = pro;
+                //根据省查找该省的所有下级市，市下所有区
+                for (var i = 0; i < $(xdata).find("address > 
+                     province[name = '" + provinceName + "'] > city").length; i++) {
+                $(shi).find("div").append("<a href='javascript:;'>" +
+                        $(xdata).find("address > province[name='" + provinceName + "'] >
+                city:eq(" + i + ")
+                ").attr("
+                name
+                ") + " < / a > ");
+            }
+
+            $(shi).find("a").click(function () {
+            var provinceName = $(sheng).find("span").text(); //省
+
+            var cityName = $(this).text(); //市
+            $(shi).find("span").text(cityName);
+            var country = $(xdata).find("address >
+            province[name = '" + provinceName + "'] > city[name = '" + cityName + "'] >
+            country
+            ");
+            var len = country.length;
+            $(qu).find("div").html("");
+            for (var i = 0; i < len; i++) {
+                var countryName = $(xdata).find("address >
+                province[name = '" + provinceName + "'] > city[name = '" + cityName + "'] >
+                country
+            :
+                eq(" + i + ")
+                ").attr("
+                name
+                ");
+                $(qu).find("div").append("<a
+                href = 'javascript:;' > " + countryName + " < / a > ");
+            }
+            //隐藏列表
+            $(this).parents(".ddldisplay").find("div").hide();
+            $(qu).find("span").text($(qu).find("div
+            a:eq(0)
+            ").text());
+            $(qu).find("a").click(function () {
+                $(qu).find("span").text($(this).text());
+            });
+        });
+        //市赋值
+        $(shi).find("span").text($('#TextBox17').val())
+    }
+    }
+    )
+    ;
+    }
+
+    function test3(pro, city) {
+        $.ajax({
+            url: "Area.xml", //地址
+            type: "GET",
+            dataType: "xml",
+            error: function (xdata) {
+                alert("fail:");
+            },
+            success: function (xdata) {
+
+                var sheng, shi, qu;
+                sheng = $("#ddlSheng");
+                shi = $("#ddlShi");
+                qu = $("#ddlQu");
+
+                var provinceName = pro;
+                var cityName = city; //市
+                $(shi).find("span").text(cityName);
+                var country = $(xdata).find("address > province[name='" +
+                        provinceName + "'] > city[name='" + cityName + "'] > country");
+                var len = country.length;
+                $(qu).find("div").html("");
+                for (var i = 0; i < len; i++) {
+                    var countryName = $(xdata).find("address > 
+                    province[name = '" + provinceName + "'] > city[name = '" + cityName + "'] >
+                    country
+                :
+                    eq(" + i + ")
+                    ").attr("
+                    name
+                    ");
+                    $(qu).find("div").append("<a href='javascript:;'>" +
+                            countryName + "</a>");
+                }
+                //隐藏列表
+                $(this).parents(".ddldisplay").find("div").hide();
+                $(qu).find("span").text($(qu).find("div 
+                a:eq(0)
+                ").text());
+                $(qu).find("a").click(function () {
+                    $(qu).find("span").text($(this).text());
+                });
+                //区赋值
+                if ($('#TextBox18').val() != "") {
+                    $(qu).find("span").text($('#TextBox18').val());
+                }
+            }
+        });
+    }
+
+    function show() {
+        if (document.getElementById("Panel1").style.display == "") {
+            document.getElementById("Panel1").style.display = "none";
+        }
+        else {
+            document.getElementById("Panel1").style.display = "";
+        }
+    }
+</script>
+</body>
+</html>
