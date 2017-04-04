@@ -321,13 +321,12 @@
 .tit
 {
 	height: 30px;
-	border-bottom: 2px solid rgb(235,109,160);
-
+	border-bottom: 2px solid #aacd06;
 }
 .tit p
 {
 	width: 93px;
-	background: rgb(235,109,160);
+	background: #aacd06;
 	color: #fff;
 	font-family: "汉仪菱心体简" , "黑体";
 	line-height: 30px;
@@ -470,7 +469,7 @@
 .cnxh
 {
 	height: 39px;
-	background: rgb(235,109,160);
+	background: #acce0b;
 	color: #fff;
 	font: 16px/39px "微软雅黑";
 	padding-left: 15px;

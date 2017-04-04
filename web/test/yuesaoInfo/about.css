@@ -16,13 +16,20 @@ a:not(.fl .Tiao) { color: #999; }
 a:hover { text-decoration: underline; }
 ul { list-style: none; }
 img { border: none; }
-.wa { width: 1250px; margin-left: auto; margin-right: auto; }
+.wa {
+ width: 1250px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
 .l, .fl { float: left; }
 .r, .fr { float: right; }
-.flist, .fix { zoom: 1; }
-.flist:after, .fix:after { content: ''; display: block; clear: both; width: 0; height: 0; }
+.flist, .fix { zoom: 1;}
+.flist:after, .fix:after { content: ''; display: block; clear: both; width: 0; height: 0;  }
 .flist li, .flist dd, .flist dt { float: left; }
-.t2 { line-height: 41px; background: #809901; border: 1px solid; border-width: 1px 0; border-top-color: #92a725; border-bottom-color: #235b0d; }
+.t2 { line-height: 41px; background: rgb(235,109,160); border: 1px solid; border-width: 1px 0; border-top-color: rgb(235,109,160); border-bottom-color: rgb(235,109,160);  }
 .rel { position: relative; }
 .abs{ position:absolute;}
 i,em{ font-style:normal;}
@@ -30,7 +37,7 @@ i,em{ font-style:normal;}
 /*footer { margin-top: 20px; padding-bottom: 70px; background: url(../img/ss_17.png) no-repeat; padding-top: 20px; }*/
 .ftdiv { margin: 0 156px 0 32px; line-height: 24px; text-align: center; padding-top: 10px; }
 .ftlist { color: #777; }
-.ftlist a { color: #1c770e; margin: 0 6px; }
+.ftlist a { color:rgb(235,109,160); margin: 0 6px; }
 .ftlist li { display: inline; }
 .bels { position: absolute; left: 262px; height: 62px; background: #d9d9d9; width: 1px; overflow: hidden; top: 25px; }
 .copy { color: #999; }
@@ -50,7 +57,7 @@ i,em{ font-style:normal;}
 /*head*/
 .nav { font-size: 16px; }
 .nav a { float: left; color: #fff; padding: 0 38px; }
-.nav a:hover, .nav a.cur { background: #054b36; text-decoration: none; }
+.nav a:hover, .nav a.cur { background: rgb(235,109,160); text-decoration: none; }
 .nav li { position: relative; }
 .nav li span {
  display: none;
@@ -148,7 +155,7 @@ i,em{ font-style:normal;}
 .booknav li { padding-left: 10px; padding-right: 24px; line-height: 33px; }
 .booknav li a { display: block; border-bottom: 1px solid #dadada; padding-left: 14px; color: #929292; font-size: 14px; }
 .booknav li.cur {
- /*background: url(../img/yy_36.gif) no-repeat 0 50%;*/
+  background: url(../img/yy_36.gif) no-repeat 0 50%;
 }
 
 .booknav li.cur a { color: #ffa030; }

@@ -81,11 +81,11 @@
         "online": "true",
         "authType": 4,
         "bid": "1605464373043759970",
-        "webRoot": "//p.qiao.baidu.com/cps2/"
+        // "webRoot": "//p.qiao.baidu.com/cps2/"
     };
     e.config = n, e.siteConfig = t, e.startTime = +new Date, document.body.insertBefore(e, document.body.firstElement || null);
     var i = document.createElement("script");
-    i.src = "//sgoutong.baidu.com/embed/1489462977/asset/embed/pc_nb.js", i.setAttribute("charset", "UTF-8");
+    // i.src = "//sgoutong.baidu.com/embed/1489462977/asset/embed/pc_nb.js", i.setAttribute("charset", "UTF-8");
     var r = document.getElementsByTagName("head")[0] || document.body;
     r.insertBefore(i, r.firstElement || null)
 }(this);

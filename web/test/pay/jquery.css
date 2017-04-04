@@ -1,0 +1,19 @@
+﻿.mt14{margin-top:14px;}
+.mr_t1 { background: url(../images/mr_1px.jpg) repeat-x left bottom; height: 40px; padding-right: 16px; }
+.mr_t1name { font: bold 16px/40px "微软雅黑"; color: #FFF; background: #2257A2 url(../images/mr_t1bg.jpg) no-repeat right top; height: 40px; width: 120px; padding-left: 21px; float: left; }
+.mr_t1name img { float: left; margin-top: 9px; margin-right: 6px; display: inline; }
+.mr_frbox { height: 120px; border-right: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; border-left: 1px solid #DEDEDE; padding:25px 22px 0px; }
+.mr_frBtnL { float: left; margin:22px 22px 0px 0px; cursor: pointer; display: inline; }
+.mr_frBtnR { float: right; margin-top:22px; cursor: pointer; }
+.mr_frUl { float: left; height: 130px; width: 845px; }
+.mr_frUl ul{ width:845px;}
+.mr_frUl ul li { display: inline; float: left; width: 127px; height:240px; margin-right: 16px; overflow: hidden; }
+.mr_frUl ul li img {display: block; border: 1px solid #D8D8D8; }
+
+.mr_frbox2 { height: 120px; border-right: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; border-left: 1px solid #DEDEDE; padding:25px 22px 0px; }
+.mr_frBtnL2 { float: left; margin:22px 22px 0px 0px; cursor: pointer; display: inline; }
+.mr_frBtnR2 { float: right; margin-top:22px; cursor: pointer; }
+.mr_frUl2 { float: left; height: 130px; width: 545px; }
+.mr_frUl2 ul{ width:545px;}
+.mr_frUl2 ul li { display: inline; float: left; width: 127px; height:240px; margin-right: 16px; overflow: hidden; }
+.mr_frUl2 ul li img {display: block; border: 1px solid #D8D8D8; }
