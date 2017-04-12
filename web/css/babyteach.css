@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.denlu{
+    width: 100%;
+    height: 125px;
+
+}
+.denlu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top:5px;
+    font-size: 15px;
+    margin-left: 5px;
+    left:900px;
+}
+.denlu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    position: relative;
+    left: 200px;
+    top:10px;
+}
+.tel img{
+    position: relative;
+    top:-10px;
+    left:850px;
+}
+/*µ¼º½À¸*/
+
+.nav{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #EB6DA0;
+}
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 140px;
+    font-size: 18px;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/*ÖÐ¼ä*/
+.imgcenter{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
+.imgA{
+    position: absolute;
+    left: 190px;
+    top:20px;
+}
+ .prev{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    left:200px;
+    top:120px;
+
+}
+ .next{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    right:200px;
+    top:120px;
+
+}
+ .propagate{
+     position: relative;
+     width: 100%;
+     height: 500px;
+     background-color: aquamarine;
+ }
+.propagate .ula ul li{
+    display: inline-block;
+    line-height: 30px;
+
+}
+.propagate .ula ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+
+}
+.propagate .ula ul li p{
+    color: white;
+
+}
+.propagate .ula {
+    position: absolute;
+    top:20px;
+    left:195px;
+
+}
+.propagate .ulb {
+    position: absolute;
+    top:20px;
+    left:415px;
+}
+.propagate .ulc {
+    position: absolute;
+    top:15px;
+    left:630px;
+}
+.propagate  .enlist{
+    position: absolute;
+    top:20px;
+    left:1010px;
+}
+.propagate   .hh1{
+    position: absolute;
+    top:220px;
+    left:195px;
+}
+.propagate .hh1 ul li{
+    display: inline-block;
+    color: white;
+}
+.propagate .hh1 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+
+}
+.propagate .hh1 ul li{
+    display: inline-block;
+    line-height: 30px;
+}
+
+
+.propagate .qinzi{
+    position: absolute;
+    top:220px;
+    left:415px;
+}
+.propagate .qinzi ul li{
+    display: inline-block;
+    color: white;
+}
+.propagate .qinzi ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+
+}
+.propagate .qinzi ul li{
+    display: inline-block;
+    line-height: 30px;
+}
+.propagate .qinzia{
+    position: absolute;
+    top:220px;
+    left:630px;
+}
+.propagate .qinzib{
+    position: absolute;
+    top:220px;
+    left:1000px;
+}
+.footer_top{
+    background-color: #EB6DA0;
+    white:100%;
+    height: 300px;
+}
+.erweim{
+    position: relative;
+    top:40px;
+    left:100px;
+
+}
+.wenzi2{
+    position: relative;
+    top:-95px;
+    left:230px;
+}
+.wenzi2 a{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.wenzi1 p{
+    color: white;
+    position: relative;
+    top:-85px;
+    left:250px;
+    font-size: 15px;
+}
+.fenx{
+    position: relative;
+    left: 1000px;
+    top:-200px;
+}
+.fenx ul li{
+    display: inline-block;
+    list-style: none;
+}
+.fenx ul li a{
+    text-decoration: none;
+    color: white;
+}
+.lianjie1{
+    position: relative;
+    left: 20px;
+    top:-80px;
+}
+.lianjie1 ul li{
+    display: inline-block;
+    list-style: none;
+}
+.lianjie1 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+
+

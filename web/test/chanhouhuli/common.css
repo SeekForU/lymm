@@ -1,0 +1,431 @@
+/* CSS Document */
+html
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body
+{
+    font-size: 12px;
+    color: #666;
+    font-family: "Microsoft YaHei" , "微软雅黑" , arial, sans-serif,Verdana,Helvetica;
+    background: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, input, textarea, blockquote, td, tr, th, thead, tbody
+{
+    padding: 0;
+    margin: 0;
+}
+img
+{
+    border: 0;
+}
+ol, ul
+{
+    list-style: none;
+}
+li
+{
+    list-style-type: none;
+}
+address, cite, code, em, th
+{
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, input, select, teaxt, textarea
+{
+    font-size: 12px;
+    font-weight: normal;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+::-moz-selection
+{
+    background: #1c770e;
+    color: #fff;
+}
+/*针对Firefox*/
+::selection
+{
+    background: #1c770e color:#fff;
+}
+
+/* other */
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.warp
+{
+    height: auto;
+    play: block;
+    overflow: hidden;
+    clear: both;
+}
+.container
+{
+    width: 980px;
+    height: auto;
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    clear: both;
+}
+.pm15
+{
+    padding-bottom: 15px;
+}
+.pt28
+{
+    padding-top: 28px;
+}
+.mt15
+{
+    margin-top: 15px;
+}
+.mt20
+{
+    margin-top: 20px;
+}
+.lvs
+{
+    color: #10a200;
+}
+.hs
+{
+    color: #ff6600;
+}
+.mt10
+{
+    margin-top: 10px;
+}
+.c333
+{
+    color: #333;
+}
+.pl20
+{
+    padding-left: 20px;
+}
+.red
+{
+    color: #f00;
+}
+.f15
+{
+    font-size: 15px;
+}
+.f14
+{
+    font-size: 14px;
+}
+.f16
+{
+    font-size: 16px;
+}
+.f18
+{
+    font-size: 18px;
+}
+.mr20
+{
+    margin-right: 20px;
+}
+.ml20
+{
+    margin-left: 20px;
+}
+.ml10
+{
+    margin-left: 10px;
+}
+.jhs
+{
+    color: #fa8c23;
+}
+.b
+{
+    font-weight: bold;
+}
+.ml50
+{
+    margin-left: 50px;
+}
+.ml5
+{
+    margin-left: 5px;
+}
+.mr5
+{
+    margin-right: 5px;
+}
+.ml80
+{
+    margin-left: 80px;
+}
+
+/* link color */
+
+
+.position
+{
+    width: 1200px;
+    height: auto;
+    color: #cacaca;
+    font-size: 12px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.position a:link, .position a:visited
+{
+    color: #cacaca;
+}
+.position a:hover, .position a:active
+{
+    color: #666666;
+}
+.main_box
+{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix
+{
+    display: inline-block;
+}
+* html .clearfix
+{
+    height: 1%;
+}
+.clearfix
+{
+    display: block;
+}
+.clear
+{
+    clear: both;
+    font-size: 0;
+    line-height: 1px;
+    height: 1px !important;
+}
+
+.bor1
+{
+    border: 1px solid #dbd7d3;
+}
+.mt20
+{
+    margin-top: 20px;
+}
+.tc
+{
+    text-align: center;
+}
+.mt10
+{
+    margin-top: 10px;
+}
+.mt8
+{
+    margin-top: 8px;
+}
+.ml40
+{
+    margin-left: 40px;
+}
+.mr40
+{
+    margin-right: 40px;
+}
+i
+{
+    font-style: normal;
+}
+
+
+
+/*分享栏CSS开始*/
+.share
+{
+    float: right;
+    margin-top: 1rem; /*position: absolute; 	/*top:1.875rem;*/ /*width:75%; 	/*overflow:hidden;*/ /*opacity: .95; 	/*background: #fff;	*/ /*-moz-transition: 0.6s all; 	-webkit-transition: 0.6s all; 	transition: 0.6s all; 	/*border-bottom:0.06125rem solid #d8d8d8;*/ /*height:0;*/
+}
+.tog-class
+{
+    height: 6.5rem;
+    left: 36.5rem; /*    top: rem;*/
+    margin-top: -50px;
+}
+.share ul
+{
+    display: block;
+    font-size: 0;
+}
+.share ul li
+{
+    display: inline-block;
+    width: 5%;
+    padding: 1rem 0;
+}
+.share ul li p
+{
+    font-size: 0.75rem;
+    line-height: 150%;
+    color: #010101; /* margin-top: -0.5rem; */
+    margin-left: 5px;
+}
+.share ul li a
+{
+    display: inline-block;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.share ul li a.fri
+{
+    background: url(../images/share-icon.png) 0rem 0rem no-repeat;
+    background-size: 12.5rem 12.5rem;
+}
+.share a.bds_weixin
+{
+    /*	background: url(../images/share-icon.png) -3.125rem 0rem no-repeat; 	background-size:12.5rem 12.5rem;*/
+    background: url(../images/share-icon.png) -2.3rem 0rem no-repeat;
+    background-size: 9.1rem 9rem;
+}
+.share a.bds_sqq
+{
+    background: url(../images/share-icon.png) 0rem -2.3rem no-repeat;
+    background-size: 9rem 9rem;
+}
+.share a.bds_qzone
+{
+    background: url(../images/share-icon.png) -6.8rem 0rem no-repeat;
+    background-size: 9rem 9rem;
+}
+.share a.bds_tsina
+{
+    background: url(../images/share-icon.png) -4.5rem 0rem no-repeat;
+    background-size: 9rem 9rem;
+}
+
+#Fen
+{
+    float: left;
+    line-height: 44px;
+    height: 32px;
+}
+
+
+/*二维码部分*/
+.erweima
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -7rem;
+    margin-left: -7rem;
+    width: 14rem;
+    height: 14rem;
+    border: 0.06125rem solid #d8d8d8;
+    background: #fff;
+    z-index: 999;
+    display: none;
+}
+.erweima-title
+{
+    overflow: hidden;
+}
+.erweima-title p
+{
+    float: left;
+    font-size: 0.6125rem;
+    padding: 0.6rem 0 0.6rem 0.6rem;
+    color: #010101;
+}
+.erweima-title b
+{
+    float: right;
+    padding: 0.6rem;
+    font-size: 0.6125rem;
+    font-weight: normal;
+    color: #999;
+}
+.erweima-main
+{
+    text-align: center;
+}
+.erweima-main img
+{
+    width: 9rem;
+    height: 9rem;
+}
+.erweima-text p
+{
+    padding: 0 0.6rem;
+    font-size: 0.6125rem;
+}
+/*微信分享提示*/
+
+.share-tips
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.share-tips img
+{
+    width: 100%;
+    height: auto;
+}
+.mask
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: none;
+}
+
+/*分享栏CSS结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

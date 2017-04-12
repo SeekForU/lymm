@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.denlu{
+    width: 100%;
+    height: 125px;
+}
+.denlu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top:5px;
+    font-size: 15px;
+    margin-left: 5px;
+    left:900px;
+}
+.denlu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    position: relative;
+    left: 200px;
+    top:10px;
+}
+.tel img{
+    position: relative;
+    top:-10px;
+    left:850px;
+}
+/*导航栏*/
+
+.nav{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #EB6DA0;
+}
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 140px;
+    font-size: 18px;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/*中间的大图部分*/
+.cen_img{
+    width: 100%;
+    height: 605px;
+    position: relative;
+
+}
+.img1_1{
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+.img1_2{
+   float: left;
+    position: absolute;
+    left: 500px;
+}
+.img1_3{
+    float: left;
+    position: absolute;
+    left: 500px;
+    top:295px;
+}
+.qf{
+    clear: both;
+}
+/*<!--车内配备-->*/
+.provide{
+    width: 100%;
+    height: 400px;
+    background-color: #EB6DA0;
+
+}
+.provide p{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.provide ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+.text p{
+    font-size: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+
+    display: inline-block;
+}
+.driver{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    background-image: url("../img/banne1r.jpg");
+    background-repeat: no-repeat;
+}
+.driver p{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.driver .sj{
+    width: 300px;
+    height: 300px;
+    border: solid 10px darksalmon;
+    border-radius: 50%;
+    position: absolute;
+    left: 260px;
+    top:80px;
+  background-color: darkturquoise;
+}
+.driver .cl{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 10px darksalmon;
+    border-radius: 50%;
+    left: 700px;
+    top:80px;
+    background-color: darkturquoise;
+}
+.driver .bz{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 10px darksalmon;
+    border-radius: 50%;
+    left: 470px;
+    top:330px;
+    background-color: darkturquoise;
+}
+.footer_top{
+    background-color: #EB6DA0;
+    white:100%;
+    height: 300px;
+}
+.erweim{
+    position: relative;
+    top:40px;
+    left:100px;
+
+}
+.wenzi2{
+    position: relative;
+    top:-95px;
+    left:230px;
+}
+.wenzi2 a{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.wenzi1 p{
+    color: white;
+    position: relative;
+    top:-85px;
+    left:250px;
+    font-size: 15px;
+}
+.fenx{
+    position: relative;
+    left: 1000px;
+    top:-200px;
+}
+.fenx ul li{
+    display: inline-block;
+    list-style: none;
+}
+.fenx ul li a{
+    text-decoration: none;
+    color: white;
+}
+.lianjie1{
+    position: relative;
+    left: 20px;
+    top:-80px;
+}
+.lianjie1 ul li{
+    display: inline-block;
+    list-style: none;
+}
+.lianjie1 ul li a{
+   text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+

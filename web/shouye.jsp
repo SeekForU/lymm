@@ -125,6 +125,7 @@
 	{{/each}}
 	{{/if}}
 
+
     </script>
     <div class="bannerC">
         <div class="bannerCL">
@@ -133,12 +134,17 @@
         </div>
         <div class="bannerCR">
             <div class="bannerCR1">
-                <div class="bannerCR11"><img src="img/zhuanchejiesong.png"></div>
+                <div class="bannerCR11"><a href="html/car.html"><img src="img/zhuanchejiesong.png"></div>
                 <%--<div class="bannerCR11"><a href="html/hosptial.html"><img src="img/yuyueguahao.png"></a></div></div>--%>
                 <%--原始版本--%>
                 <%--<div class="bannerCR11"><a href="doctors.jsp"><img src="img/yuyueguahao.png"></a></div></div>--%>
                 <%--新版本--%>
-                <div class="bannerCR11"><a href="pages/doctor.jsp"><img src="img/yuyueguahao.png"></a></div>
+                <%--<div class="bannerCR11"><a href="pages/doctor.jsp">--%>
+                <%--<div class="bannerCR11"><a href="http://sighttp.qq.com/msgrd?v=1&uin=794583658">--%>
+                <div class="bannerCR11">
+
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1014318193&site=qq&menu=yes">
+                    <img src="img/yuyueguahao.png"></a></div>
             </div>
             <div class="bannerCR2">
                 <div class="bannerCR11"><a href="html/Mental.html"><img src="img/chanqianduanlian.png"></a></div>
