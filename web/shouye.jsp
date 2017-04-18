@@ -17,7 +17,6 @@
         }
     </script>
     <link rel="stylesheet" href="css/template2.css" type="text/css">
-    <link rel="stylesheet" href="css/shouye.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript">
@@ -30,6 +29,9 @@
     <link rel="stylesheet" href="css/shouye.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
@@ -69,38 +71,39 @@
         <li id="li-2">妈咪佳人<span></span></li>
         <li id="li-3">孕妈用品<span></span></li>
         <li id="li-4">宝贝用品<span></span></li>
-        <li>妈妈论坛</li>
+        <li></li>
+        <%--<li><a href="#">妈妈论坛</a></li>--%>
     </ul>
     <!--隐藏盒子-->
     <div id="box-1" class="hidden-box hidden-loc-index">
         <ul>
-            <li>预约挂号</li>
-            <li>专车服务</li>
-            <li>营养咨询</li>
-            <li>产前锻炼</li>
+            <li><p><a href="http://wpa.qq.com/msgrd?v=3&uin=1014318193&site=qq&menu=yes" style="color: #0a62c3">在线预约</a></p></li>
+            <li><a href="html/car.html" style="color: #0a62c3">专车服务</a></li>
+            <li><a href="test/paigutang.html" style="color: #0a62c3">营养咨询</a></li>
+            <li><a href="test/canhouhuifu.html" style="color: #0a62c3">产前锻炼</a></li>
         </ul>
     </div>
     <div id="box-2" class="hidden-box hidden-loc-us">
         <ul>
-            <li>产后恢复</li>
-            <li>月嫂中心</li>
-            <li>心理咨询</li>
-            <li>饮食调理</li>
+            <li><a href="test/canhouhuifu.html" style="color: #0a62c3">产后恢复</a></li>
+            <li><a href="test/info.html" style="color: #0a62c3">月嫂中心</a></li>
+            <li><a href="html/Mental.html" style="color: #0a62c3">心理咨询</a></li>
+            <li><a href="test/paigutang.html" style="color: #0a62c3">饮食调理</a></li>
         </ul>
     </div>
     <div id="box-3" class="hidden-box hidden-loc-info">
         <ul>
-            <li>孕妈服饰</li>
-            <li>孕妈美妆</li>
-            <li>产后恢复</li>
-            <li>母乳喂养</li>
+            <li><a href="#" style="color: #0a62c3">孕妈服饰</a></li>
+            <li><a href="#" style="color: #0a62c3">孕妈美妆</a></li>
+            <li><a href="test/canhouhuifu.html" style="color: #0a62c3">产后恢复</a></li>
+            <li><a href="#" style="color: #0a62c3">母乳喂养</a></li>
         </ul>
     </div>
     <div id="box-4" class="hidden-box hidden-loc-info box04">
         <ul>
-            <li>宝宝服饰</li>
-            <li>玩具</li>
-            <li>早教产品</li>
+            <li><a href="#" style="color: #0a62c3">宝宝服饰</a></li>
+            <li><a href="#" style="color: #0a62c3">玩具</a></li>
+            <li><a href="#" style="color: #0a62c3">早教产品</a></li>
         </ul>
     </div>
 </div>
@@ -185,12 +188,12 @@
             </div>
             <div class="zongtiCL2">
                 <div class="zongtiCL2L"><img src="img/3gedian.png"></div>
-                <div><a href="#">孕初期缓解准妈孕吐食谱做法 孕早期大多数妈妈都要经历难...</a></div>
+                <div><a href="html/huanjieyuntu.html">孕初期缓解准妈孕吐食谱做法 孕早期大多数妈妈都要经历难...</a></div>
             </div>
             <div class="zongtiCL2B"><img src="img/jiange_line.png"></div>
             <div class="zongtiCL2">
                 <div class="zongtiCL2L"><img src="img/3gedian.png"></div>
-                <div><a href="#">孕期准妈妈缓解感冒的食疗做法 感冒后，一方面孕妈不敢吃药...</a></div>
+                <div><a href="html/huanjieganmao.html">孕期准妈妈缓解感冒的食疗做法 感冒后，一方面孕妈不敢吃药...</a></div>
             </div>
             <div class="zongtiCL2B"><img src="img/jiange_line.png"></div>
             <div class="zongtiCL2">
@@ -209,12 +212,12 @@
 
             <div class="zongtiCR1R">
                 <div class="zongtiCL2L"><img src="img/3gedian.png"></div>
-                <div><a href="#">孕期胎教 孕妈要告别四种心理</a></div>
+                <div><a href="html/huaiyuntaijiao.html">孕期胎教 孕妈要告别四种心理</a></div>
             </div>
             <div class="zongtiCL2B1"><img src=" img/taijiao_line.png"></div>
             <div class="zongtiCR1R">
                 <div class="zongtiCL2L"><img src="img/3gedian.png"></div>
-                <div><a href="#">最in的三种胎教大PK 哪个是你的菜？</a></div>
+                <div><a href="html/taijiaoPK.html">最in的三种胎教大PK 哪个是你的菜？</a></div>
             </div>
             <div class="zongtiCL2B1"><img src="img/taijiao_line.png"></div>
 
@@ -261,7 +264,7 @@
     <div class="biao">
         <table width="1000" border="0">
             <tr>
-                <td width="248"><a href="#"><img src="img/shouye_07.png" width="235" height="176"/></a></td>
+                <td width="248"><a href="html/neiBuHuanJing.html"><img src="img/shouye_07.png" width="235" height="176"/></a></td>
                 <td width="248"><a href="#"><img src="img/shouye_09.png" width="234" height="176"/></a></td>
                 <td width="248"><a href="#"><img src="img/shouye_11.png" width="232" height="176"/></a></td>
                 <td width="238"><a href="#"><img src="img/shouye_13.png" width="238" height="176"/></a></td>

@@ -1,0 +1,69 @@
+#dropmenu{	
+margin: 0;
+padding: 0;
+width:100%;
+height:50px;
+}
+
+#dropmenu li{	
+float: left;
+list-style: none;
+font: 14px/50px  'microsoft yahei',SimSun,Verdana,Arial;
+
+}
+
+#dropmenu li a{	
+display: block;
+padding: 0px;
+text-align:center;
+text-decoration: none;
+width: 111px;/* 每个菜单位的宽 */
+color: #4a7a43;
+white-space: nowrap;
+/* background: url(../images/menu.png); *//* 隐藏菜单背景 */
+font: 14px/100px  'microsoft yahei',SimSun,Verdana,Arial;
+}
+
+#dropmenu li a:hover{	
+color: #6ac563;
+background: url(../images/menunow.png);
+font: 14px/100px  'microsoft yahei',SimSun,Verdana,Arial;
+}
+		
+#dropmenu li ul{
+margin: 0px 0;/* 间距 */
+padding: 10px 0px;/* 上下，空位 */
+width: 111px;/* 菜单下拉背景的宽 */
+position: absolute;
+visibility: hidden;
+background: url(../images/menubg.png) repeat;
+}
+		
+#dropmenu li ul li{
+float: none;
+display: inline;
+width: 111px;
+height:30px;
+font: 14px/30px  'microsoft yahei',SimSun,Verdana,Arial;
+}
+			
+#dropmenu li ul li a{	
+padding: 0px;
+text-align:center;
+color: #ffffff;
+background: url(../images/menubg.png) repeat;
+font: 14px/30px  'microsoft yahei',SimSun,Verdana,Arial;
+}
+			
+#dropmenu li ul li a:hover{	
+padding: 0px;
+color: #fff;
+background: #02abed;
+font: 14px/30px  'microsoft yahei',SimSun,Verdana,Arial;
+}
+
+#dropmenu .dropmenu_end{
+width: 2px;
+background: url(../images/menu.png);
+height:50px;
+}

@@ -5,14 +5,8 @@
 <title>医院</title>
 <link rel="stylesheet" href="../css/hospital1.css" type="text/css">
 <link rel="stylesheet" href="../css/template1.css" type="text/css">
-<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/main111.css"/>
 <script type="text/javascript" src="../js/jquery.js"></script>
-    <style type="text/css">
-        .href1 {
-            text-decoration: none;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -33,7 +27,7 @@
 <div class="nav">
 	<!--导航条-->
 	<ul class="nav-main">
-        <li><a class="href1" href="../shouye.jsp">首页</a></li>
+        <li>首页</li>
 		<li id="li-1">准妈妈 </li>
 		<li id="li-2">妈咪佳人<span></span></li>
 		<li id="li-3">孕妈用品<span></span></li>
@@ -84,12 +78,12 @@
     </div>
     
     <script id="longlian_service_tmpl" type="text/x-jquery-tmpl">
-	<!--{{if service != null}}-->
-		<!--{{each(i, svc) service}}-->
-		<!--<li><a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=${svc.ServiceAccount}&site=qq&menu=yes">${svc.ServiceName}-->
-		<!--</a></li>-->
-	<!--{{/each}}-->
-	<!--{{/if}}-->
+	{{if service != null}}
+		{{each(i, svc) service}}
+		<li><a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=${svc.ServiceAccount}&site=qq&menu=yes">${svc.ServiceName}
+		</a></li>
+	{{/each}}
+	{{/if}}
 </script>
  </div>
  
@@ -192,72 +186,73 @@
 
  
    <div id="footer">
-    <div class="footer_top">
-        <div class="light">
-        <div class="erweim">
-           <img src="../img/erweim_85.png" />
-        </div>
-        </div>
-        <div class="right">
-        <div class="Rlight">
-        <div class="wenzi">
-            <div class="wenzi2">
-               <a href="#">关于我们</a>
-               <span class="shugang">|</span>
-               <a href="#">联系我们</a>
-               <span class="shugang">|</span>
-               <a href="#">月子餐</a>
-               <span class="shugang">|</span>
-               <a href="#">孕妇产后修复</a>
-               <span class="shugang">|</span>
-               <a href="#">宝宝出生啦</a>
-               <span class="shugang">|</span>
-               <a href="#">最美妈妈</a>
-                <span class="shugang">|</span>
-               <a href="#">最美妈妈</a>
-                <span class="shugang">|</span>
-               <a href="#">最美妈妈</a>
-
-
-            </div>
-            <div class="wenzi1"><p>地址：陕西省安康市汉滨区安康大道中段</p></div>
-            <div class="wenzi1"><p>24小时咨询电话：0915-4589235  咨询QQ：794589135</p></div>
-        </div>
-        </div>
-        <div class="Rright">
-        <div class="fenx">
-            <ul>
-               <li><a href="#">分享到：</a></li>
-               <li><a href="#"><img src="../img/ico1_92.png" /></a></li>
-               <li><a href="#"><img src="../img/ico2_102.png" /></a></li>
-               <li><a href="#"><img src="../img/ico3_100.png" /></a></li>
-               <li><a href="#"><img src="../img/ico4_98.png"/></a></li>
-               <li><a href="#"><img src="../img/ico5_96.png" /></a></li>
-               <li><a href="#"><img src="../img/ico6_94.png" /></a></li>
-            </ul>
-        </div>
-        </div>
-        </div>
-
-    </div>
-
-    <div class="footer_bottom">
-               <div class="lianjie1">
-                   <ul>
-                     <li><a href="#">友情链接:</a></li>
-                     <li><a href="#">安康华西妇产医院</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康中医医院</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康贝尔月子会所</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康华西妇产医院</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康中医医院</a>&nbsp;&nbsp;</li><br>
-                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">安康贝尔月子会所</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
-                     <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
-                  </ul>
-               </div>
+<div class="footer_top">
+    <div class="light">
+    <div class="erweim">
+       <img src="../img/erweim_85.png" />
     </div>
     </div>
+    <div class="right">
+    <div class="Rlight">
+    <div class="wenzi">
+        <div class="wenzi2">
+           <a href="#">关于我们</a>
+           <span class="shugang">|</span>
+           <a href="#">联系我们</a>
+           <span class="shugang">|</span>
+           <a href="#">月子餐</a>
+           <span class="shugang">|</span>
+           <a href="#">孕妇产后修复</a>
+           <span class="shugang">|</span>
+           <a href="#">宝宝出生啦</a>
+           <span class="shugang">|</span>
+           <a href="#">最美妈妈</a>
+            <span class="shugang">|</span>
+           <a href="#">最美妈妈</a>
+            <span class="shugang">|</span>
+           <a href="#">最美妈妈</a>
+         
+           
+        </div>
+        <div class="wenzi1"><p>地址：陕西省安康市汉滨区安康大道中段</p></div>
+        <div class="wenzi1"><p>24小时咨询电话：0915-4589235  咨询QQ：794589135</p></div>
+    </div>
+    </div>
+    <div class="Rright">
+    <div class="fenx">
+        <ul>
+           <li><a href="#">分享到：</a></li>
+           <li><a href="#"><img src="../img/ico1_92.png" /></a></li>
+           <li><a href="#"><img src="../img/ico2_102.png" /></a></li>
+           <li><a href="#"><img src="../img/ico3_100.png" /></a></li>
+           <li><a href="#"><img src="../img/ico4_98.png"/></a></li>
+           <li><a href="#"><img src="../img/ico5_96.png" /></a></li>
+           <li><a href="#"><img src="../img/ico6_94.png" /></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="footer_bottom">
+	       <div class="lianjie1">          
+               <ul>
+                 <li><a href="#">友情链接:</a></li>
+                 <li><a href="#">安康华西妇产医院</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康中医医院</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康贝尔月子会所</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康华西妇产医院</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康中医医院</a>&nbsp;&nbsp;</li><br>
+                 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">安康贝尔月子会所</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
+                 <li><a href="#">安康产后恢复中心</a>&nbsp;&nbsp;</li>
+                 
+              </ul>
+           </div>
+</div>
+
 </body>
 </html>
